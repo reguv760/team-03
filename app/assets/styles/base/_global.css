@@ -1,10 +1,521 @@
-body {
-  font-family: 'Roboto', sans-serif;
+/* GLOBAL */
+/* HW for 8/25+ convert logo to SVG; replace on index.html */
+body
+{
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size:1em;
+  letter-spacing: 0.1em;
   color: #333;
-  background-color: green;
+  /* css images will have to be copied into temp
+  to be visible during development */
 }
 
-img {
+img
+{
   max-width: 100%;
   height: auto;
 }
+
+h2
+{
+  text-transform: uppercase;
+}
+
+/* ------------------ */
+/* header section */
+.header
+{
+  color:#eee;
+  background-clip: contain;
+}
+
+.container.header
+{
+  padding:0px;
+  min-height:100px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-bottom:12px;
+  position:relative;
+}
+
+.container.header .row,
+.container.header .row .col
+{
+  margin:0;
+  padding:0;
+}
+
+.container.header .mobileHeader
+{
+  margin-bottom:10px;
+}
+
+.container.header .mobilemenu-icon
+{
+  background-image: url("../icons/webIcons-WHITE/menuMobile.svg");
+  height:45px;
+  width:45px;
+  background-size: 45px 45px;
+}
+
+.container.header ul.social
+{
+  float:right;
+  padding:0;
+  margin:10px 0;
+}
+
+.container.header ul.social li
+{
+  list-style:none;
+  float:left;
+  margin-right:16px;
+}
+
+/* ---------------------- */
+.facebook-socialIcon:hover,
+.twitter-socialIcon:hover,
+ .twitterFollow-socialIcon:hover
+{
+  opacity:0.75;
+}
+
+.container.header ul li.textlink a
+{
+  text-decoration: none;
+  color:#eee;
+}
+
+.container.header ul li.textlink a:hover
+{
+    text-decoration: underline;
+}
+
+/* ------------ */
+/*      nav      */
+
+nav
+{
+  background-color:transparent;
+  box-shadow:none;
+  padding:0;
+}
+
+nav ul
+{
+  margin-top:36px;
+ }
+
+nav ul li
+{
+  font-size:1.25em;
+  font-weight:700;
+  text-transform:uppercase;
+  float:left;
+  text-align: center;
+}
+
+nav ul li a
+{
+  padding:0;
+  text-decoration: none;
+}
+
+.hero_image
+{
+  padding:10px;
+  margin:0;
+  background-color:#333;
+  width:100%;
+  min-height:375px;
+  color:#fff;
+  margin-bottom:12px;
+  position:relative;
+}
+
+.hero_image .container
+{
+}
+
+.hero_image .search_bar
+{
+  border-radius: 24px;
+  width:75%;
+  margin:4px auto;
+  padding: 10px;
+  border-radius:4px;
+  background-color:#fff;
+}
+
+.hero_image .search_bar input
+{
+  font-size:1.25em;
+  color:#000;
+}
+
+.hero_image .search_bar input[type=text]:focus + label {
+     color: #000;
+}
+/* label underline focus color */
+.hero_image .search_bar input[type=text]:focus {
+   border-bottom: 1px solid #a43a23;
+   box-shadow: 0 1px 0 0 #333;
+
+ }
+
+.searchicon-web-black
+{
+  background-image:url("../icons/webIcons/searchIconhdpi.png");
+
+}
+
+.container.content
+{
+  padding:24px;
+  background-color:#eee;
+  min-height:400px;
+}
+
+.container.content h2
+{
+  font-weight:700;
+  color: #a43a23;
+}
+
+.container.content h3
+{
+  font-weight:700;
+  color: #666;
+}
+
+.container.content p
+{
+  font-size:100%;
+  font-weight:400;
+  color: #222;
+}
+
+.container.content .row .col.s4 h2
+{
+  font-size:250%;
+}
+
+.container.content .row .col.s4 h3
+{
+  font-size:225%;
+}
+
+.page-footer
+{
+  min-height:125px;
+  background-color:#000;
+  color:#eee;
+  padding:10px;
+}
+
+.page-footer .row
+{
+  margin-top:12px;
+  padding:0;
+}
+
+.page-footer .row .col
+{
+  margin-bottom:24px;
+}
+
+
+.page-footer .footer-nav
+{
+    line-height:1.25em;
+    margin-left:12px;
+    text-align:left;
+    padding:0;
+}
+
+.page-footer .footer-nav ul li
+{
+    margin:4px;
+    width:100%;
+    text-align:left;
+}
+.page-footer h4
+{
+  font-weight:700;
+  color:#a43a23;
+  margin:0;
+  padding: 0;
+}
+
+.page-footer .col.s12
+{
+  height:auto;
+}
+
+
+ .header img.logo
+ {
+  height:auto;
+ }
+
+/* media query*/
+
+/* check for res width from 0px - 600px */
+  @media only screen and (min-width: 0px) {
+    body
+    {
+      background-color:#a43a23;
+    }
+
+         /* header - social media icons */
+    .facebook-socialIcon
+    {
+      background-image: url("../icons/social/facebook-48.png");
+    }
+
+    .twitter-socialIcon
+    {
+      background-image: url("../icons/social/twitter-48.png");
+    }
+
+    .twitterFollow-socialIcon
+    {
+      background-image: url("../icons/social/twitter-follow-48.png");
+    }
+
+    .facebook-socialIcon,
+    .twitter-socialIcon,
+     .twitterFollow-socialIcon
+     {
+      height:48px;
+      width:48px;
+     }
+
+    .container.header { }
+
+   .container.header .mobilemenu-icon
+    {
+      background-image: url("../icons/webIcons-WHITE/menuMobile.svg");
+      height:54px;
+      width:54px;
+      background-size: 54px 54px;
+    }
+
+    .container.header ul.social li
+    {
+      margin-right:16px;
+    }
+
+    .container.header ul li.textlink a
+    {
+      font-size:0.75em;
+      line-height:4em;
+    }
+
+     /* triggered when below 601px */
+     .container.header .mobileHeader
+     {
+      display: block;
+     }
+    .container.header .row nav.desktop-nav
+      {
+        display:none;
+      }
+      .header img.logo
+      {
+        margin-left:10.5%;
+        width:80%;
+      }
+
+      .container.content
+      {
+        border-radius:16px;
+      }
+       .container.content h2
+      {
+        font-size:300%;
+      }
+
+      .container.content h3
+      {
+        font-size:200%;
+      }
+
+      .page-footer h4
+      {
+        font-size:200%;
+      }
+  }
+
+
+/* check for res width from 600px++ */
+  @media only screen and (min-width: 601px) {
+    body,
+    .header
+    {
+        background-image: url("../images/crackedbg-rust.jpg");
+    }
+    .container.header
+    {
+    }
+
+    /* header - social media icons */
+    .facebook-socialIcon
+    {
+      background-image: url("../icons/social/facebook-32.png");
+    }
+
+    .twitter-socialIcon
+    {
+      background-image: url("../icons/social/twitter-32.png");
+    }
+
+    .twitterFollow-socialIcon
+    {
+      background-image: url("../icons/social/twitter-follow-32.png");
+    }
+
+    .facebook-socialIcon,
+    .twitter-socialIcon,
+     .twitterFollow-socialIcon
+     {
+      height:32px;
+      width:32px;
+     }
+
+    .container.header .mobileHeader
+      {
+        display:none;
+      }
+
+       .container.header ul.social li
+      {
+        margin-right:24px;
+      }
+
+      .container.header ul li.textlink a
+      {
+        line-height:2em;
+        font-size:1em;
+      }
+
+    .header .row .col img.logo
+    {
+      width:90%;
+      margin:0;
+      padding: 0;
+    }
+
+    .searchicon-web
+    {
+      background-image:url("../icons/webIcons-WHITE/searchIcon.svg");
+    }
+
+    .storesicon-web
+    {
+      background-image:url("../icons/webIcons-WHITE/shoppingTag.svg");
+    }
+
+    .topten-web
+    {
+      background-image:url("../icons/webIcons-WHITE/starActive.svg");
+    }
+
+    .addstore-web
+    {
+      background-image:url("../icons/webIcons-WHITE/addStore.svg");
+    }
+
+    .searchicon-web,
+    .storesicon-web,
+    .topten-web,
+    .addstore-web
+    {
+      height:64px;
+      width:64px;
+      background-size: 64px 64px;
+      margin:-16px auto;
+      padding:0;
+    }
+
+    nav
+    {
+      margin-top:4%;
+      margin-left:13.2%;
+    }
+    nav ul li
+    {
+      width:auto;
+      margin-right:36px;
+    }
+
+    .container.header .row nav.desktop-nav
+    {
+      display:block;
+    }
+
+    .container.content
+      {
+        border-radius:24px;
+        margin-bottom:12px;
+      }
+
+    .container.content h2
+    {
+      font-size:375%;
+    }
+
+    .container.content h3
+      {
+        font-size:300%;
+      }
+
+      .page-footer h4
+      {
+        font-size:225%;
+      }
+
+      .page-footer .footer-nav ul li
+      {
+        font-size:125%;
+      }
+  }
+
+/* check res if within 601px and 992px */
+@media only screen and (min-width: 601px) and (max-width: 992px)
+{
+    header .row .col img.logo
+    {
+      width:85%;
+    }
+    .searchicon-web,
+    .storesicon-web,
+    .topten-web,
+    .addstore-web
+    {
+      height:48px;
+      width:48px;
+      background-size: 48px 48px;
+    }
+
+    nav
+    {
+      margin-top:10%;
+    }
+    nav ul li
+  {
+    font-size:1em;
+    margin-right:12px;
+  }
+}
+
+/*@media only screen and (min-width: 993px) {
+    .container.header .row nav.desktop-nav
+    {
+      padding:0;
+    }
+  }*/
+
+
+

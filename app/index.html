@@ -2,26 +2,172 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
   <title>The Retail Apocalypse</title>
   <meta name="keywords" content="stores, store closing, bankruptcy">
   <meta name="description" content="A site showcasing all the retail stores closed in the United States">
+  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="temp/styles/styles.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--- JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+
 </head>
 <body>
- <div class="container">
-   <header>header</header>
-   <nav>
-     <ul>
-         <a href="">home</a>
-          <a href="">about</a>
-          <a href="">contact</a>
-     </ul>
-   </nav>
-   <main>Main</main>
-   <footer>Footer</footer>
- </div>
+  <div class="container header ">
+      <div class="row">
+        <div class="col s12">
+          <ul class="social">
+            <li><a href="#"><div class="facebook-socialIcon"></div></a></li>
+            <li><a href="#"><div class="twitter-socialIcon"></div></a></li>
+            <li><a href="#"><div class="twitterFollow-socialIcon"></div></a></li>
+            <li class="textlink"><a href="login.html">User Login</a></li>
+            <li class="textlink"><a href="forgotpassword">Forgot Password?</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- area for mobileMenu icon -->
+      <div class="row mobileHeader">
+        <div class="row">
+          <div class="col s12">
+            <nav class="nav-wrapper">
+              <a href="#" data-activates="mobileMenu" class="button-collapse"><div class="mobilemenu-icon"></div></a>
+              <ul class="side-nav" id="mobileMenu">
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Top Ten</a></li>
+                <li><a href="#">Add Store</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!--- area for desktop+ -->
+      <div class="row">
+        <div class="col s12 m4 l3">
+          <img class="logo" src="assets/images/retailapocalypse-logo.png">
+        </div>
+        <div class="col s6 m8 l9 ">
+          <nav class="nav-wrapper desktop-nav">
+            <ul>
+              <li><a href="#"><div class="searchicon-web"></div>Search</a></li>
+              <li><a href="#"><div class="storesicon-web"></div>Stores</a></li>
+              <li><a href="#"><div class="topten-web"></div>Top Ten</a></li>
+              <li><a href="#"><div class="addstore-web"></div>Add Store</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+
+    </div>
+    <div class="hero_image">
+      <div class="container">
+        <div class="search_bar">
+          <div class="searchicon-web-black"></div>
+          <input placeholder="Search by city or zip code" type="text">
+        </div>
+      </div>
+
+    <!-- place map code here -->
+    </div>
+
+   <div class="container content">
+
+   <!-- single col setup -->
+    <div class="row">
+      <div class="col m12">
+        <h2>Header</h2>
+        <h3>This is a subhead</h3>
+        <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, vel! Accusantium hic fugiat laudantium earum consequuntur, unde nam et mollitia eaque incidunt sed placeat quam voluptatum saepe sint at sunt!</p>
+      </div>
+    </div>
+
+    <!-- 2 col setup -->
+    <div class="row">
+      <div class="col s12 m6">
+
+    <h2>Header for 2-Col</h2>
+    <h3>This is a subhead</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos quis excepturi placeat inventore possimus nihil sed similique! Alias, quos. Perferendis optio assumenda iusto ratione at, deleniti consequatur fugiat voluptas!</p>
+      </div>
+      <div class="col s12 m6">
+        <h2>2nd Header for 2-Col</h2>
+        <h3>This is a subhead #2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos quis excepturi placeat inventore possimus nihil sed similique! Alias, quos. Perferendis optio assumenda iusto ratione at, deleniti consequatur fugiat voluptas!</p>
+      </div>
+    </div>
+
+   <!--  3 col setup -->
+<!--     <div class="row">
+      <div class="col s12 m12 l6">
+
+    <h2>Header for 3-Col</h2>
+    <h3>This is a subhead</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos quis excepturi placeat inventore possimus nihil sed similique! Alias, quos. Perferendis optio assumenda iusto ratione at, deleniti consequatur fugiat voluptas!</p>
+      </div>
+      <div class="col s12 m12 l6">
+        <h2>2nd Header for 3-Col</h2>
+        <h3>This is a subhead #2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos quis excepturi placeat inventore possimus nihil sed similique! Alias, quos. Perferendis optio assumenda iusto ratione at, deleniti consequatur fugiat voluptas!<br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos quis excepturi placeat inventore possimus nihil sed similique! Alias, quos. Perferendis optio assumenda iusto ratione at, deleniti consequatur fugiat voluptas!</p>
+      </div>
+      <div class="col s12 m12 l12">
+        <h2>2nd Header for 3-Col</h2>
+        <h3>This is a subhead #2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos quis excepturi placeat inventore possimus nihil sed similique! Alias, quos. Perferendis optio assumenda iusto ratione at, deleniti consequatur fugiat voluptas!</p>
+      </div>
+    </div> -->
+  </div>
+
+  <div class="page-footer">
+    <div class="container">
+       <div class="row">
+          <div class="col s12 l3">
+            <h4>Navigation</h4>
+            <nav class="nav-wrapper footer-nav">
+              <ul>
+                <li><a href="#" >Search</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Top Ten</a></li>
+                <li><a href="#">Add Store</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col s12 l6">
+            <h4>Footer Header #2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem mollitia maiores perferendis eius porro commodi ullam laborum, nesciunt iure ab. Natus dolorum iure omnis dicta, fugiat aliquam inventore officiis illum?<br/>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat numquam, excepturi vero exercitationem praesentium id ad consequuntur labore ipsum! Incidunt odit provident nisi tempore labore fuga harum aliquam ea dicta.</p>
+          </div>
+          <div class="col s12 l3">
+            <h4>The Retail Apocalypse</h4>
+            <p>3210 Main St.<br/>
+            Los Angeles, CA 90001<br/>
+            (323) 342 1230</p>
+          </div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
+
+<!--- git commits
+
+(0). pull up-to-date master: git pull origin master
+1. create new branch [from master]: git checkout -b <branchName>
+2. add files that have been added/changed: git add -A
+3. add message for changes: git commit -m "some message"
+4. [from master]: git push origin master
+    [from fork]: git push upstream master
+
+5. Inform team mates about recent push.
+(6). To pull from fork: git pull upstream master
+
+-->

@@ -16,7 +16,11 @@ gulp.task('watch', function() {
     }
   });
 
-  watch('./app/', function() {
+  watch('./app/*.html', function() {
+    browserSync.reload();
+  });
+
+  watch('./app/assets/js/*.js', function() {
     browserSync.reload();
   });
 
