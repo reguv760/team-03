@@ -20,6 +20,10 @@ gulp.task('watch', function() {
     browserSync.reload();
   });
 
+  watch('./app/assets/js/*.js', function() {
+    browserSync.reload();
+  });
+
   watch('./app/assets/styles/**/*.css', function() {
     gulp.start('cssInject');
   });
