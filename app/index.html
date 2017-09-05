@@ -20,65 +20,74 @@
 
 </head>
 <body>
-  <div class="container header ">
-      <div class="row">
-        <div class="col s12">
-          <ul class="social">
-            <li><a href="#"><div class="facebook-socialIcon"></div></a></li>
-            <li><a href="#"><div class="twitter-socialIcon"></div></a></li>
-            <li><a href="#"><div class="twitterFollow-socialIcon"></div></a></li>
-            <li class="textlink"><a href="login.html">User Login</a></li>
-            <li class="textlink"><a href="forgotpassword">Forgot Password?</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- area for mobileMenu icon -->
-      <div class="row mobileHeader">
+    <div class="container header ">
         <div class="row">
           <div class="col s12">
-            <nav class="nav-wrapper">
-              <a href="#" data-activates="mobileMenu" class="button-collapse"><div class="mobilemenu-icon"></div></a>
-              <ul class="side-nav" id="mobileMenu">
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Stores</a></li>
-                <li><a href="#">Top Ten</a></li>
-                <li><a href="#">Add Store</a></li>
-              </ul>
-            </nav>
+            <ul class="social">
+              <li><a href="#"><div class="facebook-socialIcon"></div></a></li>
+              <li><a href="#"><div class="twitter-socialIcon"></div></a></li>
+              <li><a href="#"><div class="twitterFollow-socialIcon"></div></a></li>
+              <li class="textlink"><a href="login.html">User Login</a></li>
+              <li class="textlink"><a href="forgotpassword.html">Forgot Password?</a></li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <!--- area for desktop+ -->
-      <div class="row">
-        <div class="col s12 m4 l3">
-          <img class="logo" src="assets/images/retailapocalypse-logo.png">
+        <!-- area for mobileMenu icon -->
+        <div class="row mobileHeader">
+          <div class="row">
+            <div class="col s12">
+              <nav class="nav-wrapper">
+                <a href="#" data-activates="mobileMenu" class="button-collapse"><div class="mobilemenu-icon"></div></a>
+                <ul class="side-nav" id="mobileMenu">
+                  <li><a href="#">Search</a></li>
+                  <li><a href="#">Stores</a></li>
+                  <li><a href="#">Top Ten</a></li>
+                  <li><a href="#">Add Store</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-        <div class="col s6 m8 l9 ">
-          <nav class="nav-wrapper desktop-nav">
-            <ul>
-              <li><a href="#"><div class="searchicon-web"></div>Search</a></li>
-              <li><a href="#"><div class="storesicon-web"></div>Stores</a></li>
-              <li><a href="#"><div class="topten-web"></div>Top Ten</a></li>
-              <li><a href="#"><div class="addstore-web"></div>Add Store</a></li>
-            </ul>
-          </nav>
+
+        <!--- area for desktop+ -->
+        <div class="row">
+          <div class="col s12 m4 l3">
+            <!-- logo -->
+            <div class="logo">
+              <img src="assets/images/retailapocalypse-logo.svg"/>
+            </div>
+          </div>
+
+          <div class="col s6 m8 l9 ">
+            <nav class="nav-wrapper desktop-nav">
+              <ul>
+                <li><a href="#"><div class="searchicon-web"></div>Search</a></li>
+                <li><a href="#"><div class="storesicon-web"></div>Stores</a></li>
+                <li><a href="#"><div class="topten-web"></div>Top Ten</a></li>
+                <li><a href="#"><div class="addstore-web"></div>Add Store</a></li>
+              </ul>
+            </nav>
+        </div>
       </div>
-    </div>
 
     </div>
+
     <div class="hero_image">
-      <div class="container">
-        <div class="search_bar">
-          <div class="searchicon-web-black"></div>
-          <input placeholder="Search by city or zip code" type="text">
+      <div class="search_bar">
+          <div class="container">
+              <input placeholder="Search by city or zip code" type="text">
+              <a href="#"><div class="searchicon-web-black"></div></a>
         </div>
       </div>
 
-    <!-- place map code here -->
+      <!-- place map code here -->
+      <!--- canvas for map API -->
+      <div id="map"></div>
     </div>
 
+    <script src="assets/js/mapDirections.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_j8JAi0b-c9s55a_MGtTfYLzZymswB6Q&callback=initMap"></script>
    <div class="container content">
 
    <!-- single col setup -->
@@ -142,9 +151,8 @@
             </nav>
           </div>
           <div class="col s12 l6">
-            <h4>Footer Header #2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem mollitia maiores perferendis eius porro commodi ullam laborum, nesciunt iure ab. Natus dolorum iure omnis dicta, fugiat aliquam inventore officiis illum?<br/>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat numquam, excepturi vero exercitationem praesentium id ad consequuntur labore ipsum! Incidunt odit provident nisi tempore labore fuga harum aliquam ea dicta.</p>
+            <h4>Slogan Container</h4>
+            <p>This is some witty slogan...</p>
           </div>
           <div class="col s12 l3">
             <h4>The Retail Apocalypse</h4>

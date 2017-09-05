@@ -526,7 +526,6 @@ h2
 {
   list-style:none;
   float:left;
-  margin-right:16px;
 }
 
 /* ---------------------- */
@@ -548,6 +547,14 @@ h2
 {
     text-decoration: underline;
 }
+
+.header .logo
+ {
+  width:100%;
+  height:auto;
+  background-size: 615px 385px;
+  margin:0;
+ }
 
 /* ------------ */
 
@@ -579,38 +586,74 @@ nav ul li a
 {
   padding:0;
   text-decoration: none;
+  opacity:1.0;
+}
+
+nav ul a:hover {
+    background-color: rgba(0,0,0,0);
+    color:#ccc;
+    opacity:0.75;
 }
 
 .hero_image
 {
-  padding:10px;
+  padding:0;
   margin:0;
-  background-color:#333;
   width:100%;
-  min-height:375px;
   color:#fff;
   margin-bottom:12px;
   position:relative;
 }
 
-.hero_image .container
+#map
 {
+  width:100%;
+  margin:0;
+  padding:0;
+  float:left;
+  z-index:1;
+  margin-top:-72px;
+}
+
+.hero_image .search_bar .container
+{
+
 }
 
 .hero_image .search_bar
 {
-  border-radius: 24px;
-  width:75%;
-  margin:4px auto;
-  padding: 10px;
-  border-radius:4px;
-  background-color:#fff;
+  position:relative;
+  height:55px;
+  line-height:55px;
+  margin:10px auto;
+  z-index:10;
 }
 
 .hero_image .search_bar input
 {
-  font-size:1.25em;
+  display:inline-block;
   color:#000;
+  float:left;
+  -webkit-box-shadow: 2px 2px 2px #000;
+          box-shadow: 2px 2px 2px #000;
+  border-radius:16px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding:0 10px;
+}
+
+.hero_image .search_bar input::-webkit-input-placeholder
+{
+  color: #000;
+}
+
+.hero_image .search_bar input:-ms-input-placeholder
+{
+  color: #000;
+}
+
+.hero_image .search_bar input::placeholder
+{
+  color: #000;
 }
 
 .hero_image .search_bar input[type=text]:focus + label {
@@ -620,16 +663,36 @@ nav ul li a
 /* label underline focus color */
 
 .hero_image .search_bar input[type=text]:focus {
-   border-bottom: 1px solid #a43a23;
-   -webkit-box-shadow: 0 1px 0 0 #333;
-           box-shadow: 0 1px 0 0 #333;
+   border-bottom: none;
+   -webkit-box-shadow: 0 1px 0 0 #000;
+           box-shadow: 0 1px 0 0 #000;
 
  }
 
 .searchicon-web-black
 {
-  background-image:url("../icons/webIcons/searchIconhdpi.png");
+  background-image: url("../icons/webIcons/searchIcon.svg");
+  width:100%;
+  height:auto;
+  float:left;
+  padding:10px;
+  opacity:1.0;
+  margin-top:6px;
+  display:inline-block;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 2px #000;
+          box-shadow: 2px 2px 2px #000;
+  background-color: rgba(255, 255, 255, 0.75);
+}
 
+.hero_image .search_bar a:hover
+{
+  opacity:0.75;
+}
+
+a .searchicon-web-black:hover
+{
+  background-color: rgba(164, 58, 35, 0.75);
 }
 
 .container.content
@@ -637,6 +700,7 @@ nav ul li a
   padding:24px;
   background-color:#eee;
   min-height:400px;
+  margin-bottom:12px;
 }
 
 .container.content h2
@@ -715,11 +779,6 @@ nav ul li a
   height:auto;
 }
 
-.header img.logo
- {
-  height:auto;
- }
-
 /* media query*/
 
 /* check for res width from 0px - 600px */
@@ -731,27 +790,33 @@ nav ul li a
     }
 
          /* header - social media icons */
+      .container.header ul.social li
+      {
+        list-style:none;
+        float:left;
+        margin-right:8px;
+      }
     .facebook-socialIcon
     {
-      background-image: url("../icons/social/facebook-48.png");
+      background-image: url("../icons/social/facebook-32.png");
     }
 
     .twitter-socialIcon
     {
-      background-image: url("../icons/social/twitter-48.png");
+      background-image: url("../icons/social/twitter-32.png");
     }
 
     .twitterFollow-socialIcon
     {
-      background-image: url("../icons/social/twitter-follow-48.png");
+      background-image: url("../icons/social/twitter-follow-32.png");
     }
 
     .facebook-socialIcon,
     .twitter-socialIcon,
      .twitterFollow-socialIcon
      {
-      height:48px;
-      width:48px;
+      height:32px;
+      width:32px;
      }
 
     .container.header { }
@@ -764,18 +829,12 @@ nav ul li a
       background-size: 54px 54px;
     }
 
-    .container.header ul.social li
-    {
-      margin-right:16px;
-    }
-
     .container.header ul li.textlink a
     {
       font-size:0.75em;
       line-height:4em;
     }
 
-     /* triggered when below 601px */
      .container.header .mobileHeader
      {
       display: block;
@@ -784,10 +843,42 @@ nav ul li a
       {
         display:none;
       }
-      .header img.logo
+      .header .logo
       {
-        margin-left:10.5%;
-        width:80%;
+/*       margin-left:10.5%;
+          width:80%;*/
+          width:60%;
+          margin:0 auto;
+      }
+
+      .hero_image
+      {
+        min-height:400px;
+      }
+
+      .hero_image .search_bar .container
+      {
+        width:90%;
+      }
+
+      .hero_image .search_bar input
+      {
+        font-size:1em;
+        width:62.2%;
+        margin:0 12px;
+      }
+
+      #map
+      {
+        height:400px;
+      }
+
+       .searchicon-web-black
+      {
+        margin:6px 2px;
+        background-size: 32px 32px;
+        width: 32px;
+        height: 32px;
       }
 
       .container.content
@@ -825,33 +916,41 @@ nav ul li a
     /* header - social media icons */
     .facebook-socialIcon
     {
-      background-image: url("../icons/social/facebook-32.png");
+      background-image: url("../icons/social/facebook-48.png");
     }
 
     .twitter-socialIcon
     {
-      background-image: url("../icons/social/twitter-32.png");
+      background-image: url("../icons/social/twitter-48.png");
     }
 
     .twitterFollow-socialIcon
     {
-      background-image: url("../icons/social/twitter-follow-32.png");
+      background-image: url("../icons/social/twitter-follow-48.png");
     }
 
     .facebook-socialIcon,
     .twitter-socialIcon,
      .twitterFollow-socialIcon
      {
-      height:32px;
-      width:32px;
+      height:48px;
+      width:48px;
      }
+
+     .searchicon-web-black
+    {
+      margin:6px 8px;
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+    }
 
     .container.header .mobileHeader
       {
         display:none;
       }
 
-       .container.header ul.social li
+     .container.header ul.social li
       {
         margin-right:24px;
       }
@@ -862,11 +961,11 @@ nav ul li a
         font-size:1em;
       }
 
-    .header .row .col img.logo
+    .header .row .col .logo
     {
-      width:90%;
+/*      width:90%;
       margin:0;
-      padding: 0;
+      padding: 0;*/
     }
 
     .searchicon-web
@@ -912,15 +1011,45 @@ nav ul li a
       margin-right:36px;
     }
 
+    .header .logo
+     {
+      width:92%;
+     }
+
     .container.header .row nav.desktop-nav
     {
       display:block;
     }
 
+    .hero_image .search_bar .container
+      {
+        width:92%;
+      }
+
+    .hero_image .search_bar
+    {
+      width:68.2%;
+    }
+
+     .hero_image
+    {
+      min-height:600px;
+    }
+
+    .hero_image .search_bar input
+    {
+      font-size:1.25em;
+      width:76.2%;
+    }
+
+    #map
+    {
+      height:600px;
+    }
+
     .container.content
       {
         border-radius:24px;
-        margin-bottom:12px;
       }
 
     .container.content h2
@@ -948,9 +1077,33 @@ nav ul li a
 
 @media only screen and (min-width: 601px) and (max-width: 992px)
 {
-    header .row .col img.logo
+    /* header - social media icons */
+    .facebook-socialIcon
     {
-      width:85%;
+      background-image: url("../icons/social/facebook-32.png");
+    }
+
+    .twitter-socialIcon
+    {
+      background-image: url("../icons/social/twitter-32.png");
+    }
+
+    .twitterFollow-socialIcon
+    {
+      background-image: url("../icons/social/twitter-follow-32.png");
+    }
+
+    .facebook-socialIcon,
+    .twitter-socialIcon,
+     .twitterFollow-socialIcon
+     {
+      height:32px;
+      width:32px;
+     }
+
+    header .row .col .logo
+    {
+/*      width:85%;*/
     }
     .searchicon-web,
     .storesicon-web,
@@ -962,6 +1115,11 @@ nav ul li a
       background-size: 48px 48px;
     }
 
+    .header .logo
+     {
+      width:90%;
+     }
+
     nav
     {
       margin-top:10%;
@@ -971,6 +1129,45 @@ nav ul li a
     font-size:1em;
     margin-right:12px;
   }
+
+    .container.content h2
+    {
+      font-size:325%;
+    }
+
+     .container.content h3
+      {
+        font-size:275%;
+      }
+
+      .hero_image .search_bar .container
+      {
+        width:85%;
+      }
+
+     .hero_image .search_bar input
+    {
+      font-size:1.25em;
+      width:68.2%;
+    }
+
+     .hero_image
+    {
+      min-height:600px;
+    }
+
+    #map
+    {
+      height:600px;
+    }
+
+    .searchicon-web-black
+    {
+        margin-top:8px 4px;
+        background-size: 36px 36px;
+        width: 36px;
+        height: 36px;
+    }
 }
 
 /*@media only screen and (min-width: 993px) {
