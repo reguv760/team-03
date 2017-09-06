@@ -520,6 +520,7 @@ h2
   float:right;
   padding:0;
   margin:10px 0;
+  line-height: 48px;
 }
 
 .container.header ul.social li
@@ -566,11 +567,19 @@ nav
   -webkit-box-shadow:none;
           box-shadow:none;
   padding:0;
+  position:relative;
 }
 
-nav ul
-{
-  margin-top:36px;
+nav ul { }
+
+.container.header .row .col
+ {
+  position:relative;
+ }
+
+.nav-wrapper.desktop-nav
+ {
+  width:100%;
  }
 
 nav ul li
@@ -580,6 +589,8 @@ nav ul li
   text-transform:uppercase;
   float:left;
   text-align: center;
+  margin:0;
+  padding:0;
 }
 
 nav ul li a
@@ -608,11 +619,11 @@ nav ul a:hover {
 #map
 {
   width:100%;
+  height:600px;
   margin:0;
   padding:0;
   float:left;
   z-index:1;
-  margin-top:-72px;
 }
 
 .hero_image .search_bar .container
@@ -622,11 +633,16 @@ nav ul a:hover {
 
 .hero_image .search_bar
 {
-  position:relative;
   height:55px;
   line-height:55px;
-  margin:10px auto;
   z-index:10;
+  float:left;
+  text-align: center;
+  position:absolute;
+  top:10px;
+  left:0;
+  right:0;
+  margin: auto;
 }
 
 .hero_image .search_bar input
@@ -685,10 +701,10 @@ nav ul a:hover {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.hero_image .search_bar a:hover
+/*.hero_image .search_bar a:hover
 {
   opacity:0.75;
-}
+}*/
 
 a .searchicon-web-black:hover
 {
@@ -790,11 +806,15 @@ a .searchicon-web-black:hover
     }
 
          /* header - social media icons */
+      .container.header ul.social
+      {
+        line-height: 20px;
+      }
       .container.header ul.social li
       {
         list-style:none;
         float:left;
-        margin-right:8px;
+        margin-right:6px;
       }
     .facebook-socialIcon
     {
@@ -856,9 +876,20 @@ a .searchicon-web-black:hover
         min-height:400px;
       }
 
+      .hero_image .search_bar
+      {
+        left:12.5%;
+        top:45px;
+      }
+
+      #map
+      {
+         height:400px;
+      }
+
       .hero_image .search_bar .container
       {
-        width:90%;
+        width:85%;
       }
 
       .hero_image .search_bar input
@@ -866,11 +897,6 @@ a .searchicon-web-black:hover
         font-size:1em;
         width:62.2%;
         margin:0 12px;
-      }
-
-      #map
-      {
-        height:400px;
       }
 
        .searchicon-web-black
@@ -1008,7 +1034,7 @@ a .searchicon-web-black:hover
     nav ul li
     {
       width:auto;
-      margin-right:36px;
+      margin-right:48px;
     }
 
     .header .logo
@@ -1029,6 +1055,7 @@ a .searchicon-web-black:hover
     .hero_image .search_bar
     {
       width:68.2%;
+      top:10px;
     }
 
      .hero_image
@@ -1036,15 +1063,16 @@ a .searchicon-web-black:hover
       min-height:600px;
     }
 
+      #map
+      {
+         height:600px;
+      }
+
     .hero_image .search_bar input
     {
       font-size:1.25em;
-      width:76.2%;
-    }
-
-    #map
-    {
-      height:600px;
+/*      width:76.2%;*/
+      width:82.8%;
     }
 
     .container.content
@@ -1078,6 +1106,10 @@ a .searchicon-web-black:hover
 @media only screen and (min-width: 601px) and (max-width: 992px)
 {
     /* header - social media icons */
+    .container.header ul.social
+    {
+      line-height: 32px;
+    }
     .facebook-socialIcon
     {
       background-image: url("../icons/social/facebook-32.png");
@@ -1125,10 +1157,10 @@ a .searchicon-web-black:hover
       margin-top:10%;
     }
     nav ul li
-  {
-    font-size:1em;
-    margin-right:12px;
-  }
+    {
+      font-size:1em;
+      margin-right:12px;
+    }
 
     .container.content h2
     {
@@ -1154,11 +1186,6 @@ a .searchicon-web-black:hover
      .hero_image
     {
       min-height:600px;
-    }
-
-    #map
-    {
-      height:600px;
     }
 
     .searchicon-web-black
