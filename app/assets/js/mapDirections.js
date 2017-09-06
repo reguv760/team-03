@@ -144,12 +144,12 @@ function initMap()
    //changeHandler for dropDowns:::
   var onChangeHandler = function()
   {
-   calculateAndDisplayRoute(directionsService, directionsDisplay);
+   //calculateAndDisplayRoute(directionsService, directionsDisplay);
   };
 
   //eventListeners to DropDowns AFTER defining functins:::
-  document.getElementById('start').addEventListener("change", onChangeHandler);
-  document.getElementById('end').addEventListener("change", onChangeHandler);
+  //document.getElementById('start').addEventListener("change", onChangeHandler);
+  //document.getElementById('end').addEventListener("change", onChangeHandler);
 }
 
 

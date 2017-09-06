@@ -6,7 +6,7 @@
   <title>The Retail Apocalypse</title>
   <meta name="keywords" content="stores, store closing, bankruptcy">
   <meta name="description" content="A site showcasing all the retail stores closed in the United States">
-  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro - AIGA : SUMMER 2017 ">
+  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <div class="container header">
+    <div class="container header ">
         <div class="row">
           <div class="col s12">
             <ul class="social">
@@ -41,9 +41,9 @@
               <nav class="nav-wrapper">
                 <a href="#" data-activates="mobileMenu" class="button-collapse"><div class="mobilemenu-icon"></div></a>
                 <ul class="side-nav" id="mobileMenu">
-                  <li><a href="#" class="link-active">Search</a></li>
+                  <li><a href="index.html">Search</a></li>
                   <li><a href="#">Stores</a></li>
-                  <li><a href="topten.html">Top Ten</a></li>
+                  <li><a href="#" class="link-active">Top Ten</a></li>
                   <li><a href="#">Add Store</a></li>
                   <li><a href="login.html">User Login</a></li>
                   <li><a href="#">Forgot Password?</a></li>
@@ -65,9 +65,9 @@
           <div class="col s6 m8 l9 ">
             <nav class="nav-wrapper desktop-nav">
               <ul>
-                <li><a href="#" class="link-active"><div class="searchicon-web icon-active"></div>Search</a></li>
+                <li><a href="index.html"><div class="searchicon-web"></div>Search</a></li>
                 <li><a href="#"><div class="storesicon-web"></div>Stores</a></li>
-                <li><a href="topten.html"><div class="topten-web"></div>Top Ten</a></li>
+                <li><a href="#" class="link-active"><div class="topten-web icon-active"></div>Top Ten</a></li>
                 <li><a href="#"><div class="addstore-web"></div>Add Store</a></li>
               </ul>
             </nav>
@@ -77,19 +77,56 @@
     </div>
 
     <div class="hero_image topten-hero">
-      <div class="search_bar">
+     <!--  <div class="search_bar">
           <div class="container">
               <input placeholder="Search by city or zip code" type="text">
               <a href="#"><div class="searchicon-web-black"></div></a>
-        </div>
-      </div>
+          </div>
+        </div> -->
+          <div class="topten-stores_desktop">
+            <div class="topten-stores">
+              <div class="topten-item white-bg"><img src="assets/images/topten/gamestop.png"></div>
+              <div class="topten-item blue-bg"><img src="assets/images/topten/sears.png"></div>
+              <div class="topten-item af_blue-bg"><img src="assets/images/topten/a&f.png"></div>
+              <div class="topten-item white-bg"><img src="assets/images/topten/macys.png"></div>
+              <div class="topten-item jcpenney_tan-bg"><img src="assets/images/topten/jcpenney.png"></div>
+            </div>
+            <div class="topten-stores">
+               <div class="topten-item yellow-bg"><img src="assets/images/topten/payless.png"></div>
+               <div class="topten-item white-bg"><img src="assets/images/topten/kmart.png"></div>
+              <div class="topten-item red-bg"><img src="assets/images/topten/guess.png"></div>
+              <div class="topten-item crocs_lime-bg"><img src="assets/images/topten/crocs.png"></div>
+              <div class="topten-item bebe_magenta-bg"><img src="assets/images/topten/bebe.png"></div>
+            </div>
+          </div>
 
-        <!-- place map div code here -->
-        <div id="map"></div>
+          <!-- mobile -->
+          <div class="topten-stores_mobile">
+            <div class="topten-stores">
+              <div class="topten-item white-bg"><img src="assets/images/topten/gamestop.png"></div>
+              <div class="topten-item blue-bg"><img src="assets/images/topten/sears.png"></div>
+            </div>
+            <div class="topten-stores">
+              <div class="topten-item af_blue-bg"><img src="assets/images/topten/a&f.png"></div>
+              <div class="topten-item white-bg"><img src="assets/images/topten/macys.png"></div>
 
-      </div>
+            </div>
+            <div class="topten-stores">
+              <div class="topten-item jcpenney_tan-bg"><img src="assets/images/topten/jcpenney.png"></div>
+               <div class="topten-item yellow-bg"><img src="assets/images/topten/payless.png"></div>
+            </div>
+            <div class="topten-stores">
+               <div class="topten-item white-bg"><img src="assets/images/topten/kmart.png"></div>
+              <div class="topten-item red-bg"><img src="assets/images/topten/guess.png"></div>
+            </div>
+            <div class="topten-stores">
+              <div class="topten-item crocs_lime-bg"><img src="assets/images/topten/crocs.png"></div>
+              <div class="topten-item bebe_magenta-bg"><img src="assets/images/topten/bebe.png"></div>
+            </div>
+          </div>
 
-   <div class="container content">
+   </div>
+   <div class="container content topten-mobile">
 
    <!-- single col setup -->
     <div class="row">
@@ -144,9 +181,9 @@
             <h4>Navigation</h4>
             <nav class="nav-wrapper footer-nav">
               <ul>
-                <li><a href="#" class="link-active">Search</a></li>
+                <li><a href="#" >Search</a></li>
                 <li><a href="#">Stores</a></li>
-                <li><a href="topten.html">Top Ten</a></li>
+                <li><a href="#" class="link-active">Top Ten</a></li>
                 <li><a href="#">Add Store</a></li>
               </ul>
             </nav>
@@ -155,7 +192,7 @@
             <h4>Slogan Container</h4>
             <p>This is some witty slogan...</p>
           </div>
-          <div class="col s12 l3 footer-address">
+          <div class="col s12 l3">
             <h4>The Retail Apocalypse</h4>
             <p>3210 Main St.<br/>
             Los Angeles, CA 90001<br/>
@@ -164,10 +201,6 @@
         </div>
     </div>
   </div>
-
-    <script src="assets/js/mapDirections.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_j8JAi0b-c9s55a_MGtTfYLzZymswB6Q&callback=initMap"></script>
-
 </body>
 </html>
 
