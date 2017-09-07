@@ -225,7 +225,7 @@ nav ul a:hover {
 
 .hero_image img {
   display:block;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .searchicon-web-black
@@ -272,6 +272,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  object-fit: contain;
   margin:0 auto;
 }
 

@@ -692,7 +692,8 @@ nav ul a:hover {
 
 .hero_image img {
   display:block;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .searchicon-web-black
@@ -744,6 +745,8 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -o-object-fit: contain;
+     object-fit: contain;
   margin:0 auto;
 }
 
@@ -954,7 +957,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 
     #map { height:400px; }
 
-    .hero_image .search_bar .container { width:85%; }
+    .hero_image .search_bar .container { width:92%; }
 
     .hero_image .search_bar input
     {
@@ -1071,7 +1074,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   nav ul li { margin-right:40px; }
   nav.nav-wrapper.desktop-nav ul a.link-active { color:#000;  }
 
-  .header .logo { width:92%; }
+  .header .logo { width:85%; }
 
   .container.header .row nav.desktop-nav { display:block; }
 
@@ -1138,7 +1141,6 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     height:32px;
     width:32px;
     background-size:32px 32px;
-
    }
 
    nav.nav-wrapper.desktop-nav { margin-top:9.2%; }
@@ -1148,9 +1150,9 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     .topten-web,
     .addstore-web
     {
-    height:48px;
-    width:48px;
-    background-size: 48px 48px;
+      height:48px;
+      width:48px;
+      background-size: 48px 48px;
     }
 
   .header .logo { width:90%; }
@@ -1212,17 +1214,13 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 
     .image-hero { display:block; }
 
-    .hero_image .search_bar input
-    {
-      font-size:1.25em;
-    }
+    .hero_image .search_bar input { font-size:1.25em; }
 
     .image-hero,
     .image-hero img
     {
       width:100%;
       height:600px;
-/*      height:600px;*/
     }
 }
 
