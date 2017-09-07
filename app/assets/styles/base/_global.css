@@ -142,7 +142,7 @@ nav ul a:hover {
  .nav-wrapper.desktop-nav { width:100%; }
 
 /* side nav CSS */
-.side-nav { background-color:#000; }
+.side-nav { background-color:#95989a; }
 
 .side-nav li > a
 {
@@ -158,7 +158,7 @@ nav ul a:hover {
 
 .side-nav li > a.link-active
 {
-  background-color: rgba(180,180,180,0.25);
+  background-color: rgba(239,239,239,0.5);
   color: rgba(164,58,35,1)
 }
 
@@ -264,9 +264,11 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 
 .topten-item img
 {
+  display:block;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  margin:0 auto;
 }
 
 /* colors for stores bg */
@@ -375,13 +377,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     body { background-color:#a43a23; }
 
          /* header - social media icons */
-      .container.header ul.social { line-height: 20px; }
-      .container.header ul.social li
-      {
-        list-style:none;
-        float:left;
-        margin-right:6px;
-      }
+      .container.header ul.social li { margin-right:12px; }
 
     .facebook-socialIcon { background-image: url("../icons/social/facebook-32.png"); }
     .twitter-socialIcon { background-image: url("../icons/social/twitter-32.png"); }
@@ -391,8 +387,9 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     .twitter-socialIcon,
      .twitterFollow-socialIcon
      {
-      height:32px;
-      width:32px;
+      height:30px;
+      width:30px;
+      background-size:30px 30px;
      }
 
      .container.header ul li.textlink { display:none; }
@@ -413,7 +410,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
       line-height:4em;
     }
 
-     .container.header .mobileHeader {display: block; }
+    .container.header .mobileHeader {display: block; }
     .container.header .row nav.desktop-nav { display:none; }
 
       .header .logo
@@ -467,8 +464,9 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 
       /* cheater margin to extended container when hero_image exceeds a certain length */
       .container.content.topten-mobile { margin-top:615px; }
+
       .container.content  { border-radius:16px; }
-       .container.content h2 { font-size:275%; }
+      .container.content h2 { font-size:275%; }
       .container.content h3 { font-size:200%; }
       .container.content p { font-size:0.9em; }
 
@@ -487,6 +485,8 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     .container.header { }
 
     /* header - social media icons */
+    .container.header ul.social { line-height: 40px; }
+
     .facebook-socialIcon { background-image: url("../icons/social/facebook-48.png"); }
     .twitter-socialIcon { background-image: url("../icons/social/twitter-48.png"); }
     .twitterFollow-socialIcon { background-image: url("../icons/social/twitter-follow-48.png"); }
@@ -495,8 +495,9 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     .twitter-socialIcon,
      .twitterFollow-socialIcon
      {
-      height:48px;
-      width:48px;
+      height:40px;
+      width:40px;
+      background-size: 40px 40px;
      }
 
      .searchicon-web-black
@@ -565,6 +566,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     }
 
       .hero_image { min-height: 250px; }
+
       .topten-hero { min-height: 600px; }
 
       #map { height:600px; }
@@ -580,6 +582,8 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
      width:20%;
      height:300px;
     }
+
+    /* content */
     .container.content
       {
         margin-top:0;
@@ -588,7 +592,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 
       .container.content.topten-mobile { margin-top:0; }
 
-      .container.content h2 { font-size:375%; }
+      .container.content h2 { font-size:325%; }
       .container.content h3 { font-size:300%; }
       .container.content p { font-size:1em; }
 
@@ -613,6 +617,8 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
      {
       height:32px;
       width:32px;
+      background-size:32px 32px;
+
      }
 
      nav.nav-wrapper.desktop-nav { margin-top:9.2%; }
@@ -646,8 +652,8 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     /* cheater margin for hero_image exceeding x height */
       .container.content.topten-mobile { margin-top:915px; }
 
-    .container.content h2 { font-size:325%; }
-    .container.content h3 { font-size:275%; }
+    .container.content h2 { font-size:275%; }
+    .container.content h3 { font-size:250%; }
 
     .hero_image .search_bar .container { width:85%; }
 
@@ -681,8 +687,6 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 {
       .topten-stores_desktop { display:block; }
       .topten-stores_mobile { display:none; }
-
-      .topten-item img {  }
 
       .image-hero,
       .image-hero img
