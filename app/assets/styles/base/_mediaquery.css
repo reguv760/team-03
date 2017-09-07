@@ -84,7 +84,9 @@
     }
 
     /* top ten */
-    .topten-stores_mobile { display:block; }
+    .topten-stores_mobile {
+      display:block;
+    }
     .topten-stores_desktop { display:none; }
 
     .topten-stores .topten-item
@@ -211,6 +213,11 @@
   {
    width:20%;
    height:300px;
+  }
+
+  .topten-stores .topten-item img
+  {
+    object-fit:contain;
   }
 
   /* content */

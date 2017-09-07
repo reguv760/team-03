@@ -975,7 +975,9 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
     }
 
     /* top ten */
-    .topten-stores_mobile { display:block; }
+    .topten-stores_mobile {
+      display:block;
+    }
     .topten-stores_desktop { display:none; }
 
     .topten-stores .topten-item
@@ -1102,6 +1104,12 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   {
    width:20%;
    height:300px;
+  }
+
+  .topten-stores .topten-item img
+  {
+    -o-object-fit:contain;
+       object-fit:contain;
   }
 
   /* content */
