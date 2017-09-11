@@ -201,7 +201,10 @@ nav ul a:hover {
   margin: auto;
 }
 
-.hero_image .search_bar input
+.hero_image .search_bar input,
+.container.login_form input,
+.container.forgetpass_form input,
+.container.newuser_form input
 {
   display:inline-block;
   color:#000;
@@ -213,12 +216,34 @@ nav ul a:hover {
   font-weight:700;
 }
 
-.hero_image .search_bar input::placeholder { color: #000; }
+.hero_image .search_bar input::placeholder,
+.container.login_form input::placeholder,
+.container.forgetpass_form input::placeholder,
+.container.newuser_form input::placeholder
+{
+    color: #000;
+}
 
-.hero_image .search_bar input[type=text]:focus + label { color: #000; }
+.hero_image .search_bar input[type=text]:focus + label,
+.container.login_form input[type=text]:focus + label,
+.container.login_form input[type=password]:focus + label,
+.container.forgetpass_form input[type=text]:focus + label,
+.container.newuser_form input[type=text]:focus + label,
+.container.newuser_form input[type=email]:focus + label,
+.container.newuser_form input[type=password]:focus + label
+{
+  color: #000;
+}
 
 /* label underline focus color */
-.hero_image .search_bar input[type=text]:focus {
+.hero_image .search_bar input[type=text]:focus,
+.container.login_form input[type=text]:focus,
+.container.login_form input[type=password]:focus,
+.container.forgetpass_form input[type=text]:focus,
+.container.newuser_form input[type=text]:focus,
+.container.newuser_form input[type=email]:focus,
+.container.newuser_form input[type=password]:focus
+{
    border-bottom: none;
    box-shadow: 0 1px 0 0 #000;
  }
@@ -320,9 +345,123 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   word-spacing: 0.125em;
 }
 
+.container.content p a
+{
+  color:#000;
+  font-weight: 700;
+}
+
+.container.content .newuser_form,
+.container.content .login_form,
+.container.content .forgetpass_form
+{
+/*  border:1px solid #ccc;
+  border-radius: 10px;*/
+}
+
+.container.content form
+{
+  width:90%;
+}
+
+.container.content p a:hover {  text-decoration: underline; }
+
 .container.content .row .col.s4 h2 { font-size:250%; }
 .container.content .row .col.s4 h3 { font-size:225%; }
 
+/* index list of store names + distance */
+.container.content ol,
+.container.content ul.store_names
+{
+  margin:0;
+  padding:0;
+}
+
+.container.content ol li,
+.container.content ul.store_names li
+{
+  display:inline-block;
+  font-weight: 700;
+  width:100%;
+}
+
+.container.content ol li
+{
+  list-style-type: decimal;
+  display:list-item;
+}
+
+.container.content ol li a,
+.container.content ul.store_names li a
+{
+  margin:0;
+  padding:0;
+  color:#a43a23;
+  text-decoration: none;
+}
+
+.container.content ol li a:hover,
+.container.content ul.store_names li a:hover
+{
+  color:#000;
+  text-decoration: none;
+}
+
+.store-distance
+{
+  text-align: right;
+  text-transform: capitalize;
+}
+
+/* used by topten.html */
+.topten-list
+{
+/*  list-style:upper-roman;*/
+}
+
+/* login + forget password form */
+.container.login_form .row,
+.container.newuser_form .row,
+.container.forgetpass_form .row
+{
+  margin:20px auto;
+  padding:0;
+}
+
+.container.login_form input,
+.container.forgetpass_form input,
+.container.newuser_form input
+{
+  background-color: rgba(149, 152, 154, 1);
+  border-radius: 2px;
+  padding:0 10px;
+}
+
+.container.login_form button,
+.container.forgetpass_form button,
+.container.newuser_form button
+{
+  margin:10px;
+}
+
+/* form buttons */
+.btn, .btn-large
+{
+  color: #fff;
+  background-color: #a43a23;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn:focus,
+.btn-large:focus,
+.btn-floating:focus
+{
+  background-color: #95989a;
+}
+
+
+/* footer section */
 .page-footer
 {
   min-height:125px;
