@@ -37,5 +37,7 @@ $(document).ready(function()
     // init mobile button nav
     console.log("document ready!");
     $(".button-collapse").sideNav();
+     $('select').material_select();
 
 });
+
