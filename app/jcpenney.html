@@ -42,10 +42,10 @@
                 <a href="#" data-activates="mobileMenu" class="button-collapse"><div class="mobilemenu-icon"></div></a>
                 <ul class="side-nav" id="mobileMenu">
                   <li><a href="index.html">Search</a></li>
-                  <li><a href="stores.html">Stores</a></li>
+                  <li><a href="stores.html" class="link-active">Stores</a></li>
                   <li><a href="topten.html">Top Ten</a></li>
                   <li><a href="addstore.html">Add Store</a></li>
-                  <li><a href="#" class="link-active">User Login</a></li>
+                  <li><a href="login.html">User Login</a></li>
                   <li><a href="newuser.html">Login Registration</a></li>
                 </ul>
               </nav>
@@ -66,7 +66,7 @@
             <nav class="nav-wrapper desktop-nav">
               <ul>
                 <li><a href="index.html"><div class="searchicon-web"></div>Search</a></li>
-                <li><a href="stores.html"><div class="storesicon-web"></div>Stores</a></li>
+                <li><a href="stores.html"><div class="storesicon-web icon-active"></div>Stores</a></li>
                 <li><a href="topten.html"><div class="topten-web"></div>Top Ten</a></li>
                 <li><a href="addstore.html"><div class="addstore-web"></div>Add Store</a></li>
               </ul>
@@ -77,67 +77,67 @@
     </div>
 
     <div class="hero_image image-hero">
-      <img src="assets/images/stores/radioshack.jpg">
+      <img src="assets/images/stores/jcpenney_angled.jpg">
     </div>
 
    <div class="container content">
-
-   <!-- single col setup -->
+    <!-- 2 col setup -->
+    <!-- Name of Store, address, Star Ratings : ROW -->
     <div class="row">
-      <div class="col  s12">
-        <h2>Register New Account</h2>
-        <h3>Complete form below...</h3>
-
-        <div class="container newuser_form">
-          <div class="row">
-
-              <form>
-                <div class="input-field col s12 m6">
-                  <input placeholder="First Name" id="first_name" type="text" class="validate">
-                  <label for="first_name"></label>
-                </div>
-
-                <div class="input-field col s12 m6">
-                  <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                  <label for="last_name"></label>
-                </div>
-
-                <div class="input-field col s12">
-                  <input placeholder="Email Address" id="email" type="email" class="validate">
-                  <label for="email"></label>
-                </div>
-
-                <div class="input-field col s12">
-                  <input placeholder="Confirm Email Address" id="email" type="email" class="validate">
-                  <label for="email"></label>
-                </div>
-
-                <div class="input-field col s12">
-                  <input placeholder="Password" id="password" type="password" class="validate">
-                  <label for="password"></label>
-                </div>
-
-                <div class="input-field col s12">
-                  <input placeholder="Confirm Password" id="password" type="password" class="validate">
-                  <label for="password"></label>
-                </div>
-
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                  <i class="material-icons right">send</i>
-                </button>
-            </form>
-            </div>
-          </div>
-
-          <div class="container">
-            <h4>Fine Print:</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, autem omnis, cupiditate molestiae harum, expedita obcaecati quibusdam necessitatibus soluta numquam, nobis blanditiis. Est, perspiciatis, nihil. Laudantium quisquam, vero saepe iure.<br/>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, debitis deserunt suscipit, ipsa non voluptate aperiam blanditiis. Eligendi, ducimus quas dolorem dolores, praesentium adipisci autem at est, porro ipsum dolore.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, autem omnis, cupiditate molestiae harum, expedita obcaecati quibusdam necessitatibus soluta numquam, nobis blanditiis. Est, perspiciatis, nihil. Laudantium quisquam, vero saepe iure.<br/>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
+      <div class="col s12 m6">
+        <h2>JC Penney</h2>
+        <p>123 Main St.<br/>Los Angeles, CA<br/>90001</p>
       </div>
+
+      <div class="col s12 m6">
+        <h3>Store Rating:</h3>
+        <ul class="star-container">
+          <div class="starActive"/></div>
+          <div class="starActive"/></div>
+          <div class="starActive"/></div>
+          <div class="star-inactive"/></div>
+          <div class="star-inactive"/></div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Description + Tag Container -->
+    <div class="row">
+      <div class="col s12 m6">
+        <h3>Store Description</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ipsa, similique tenetur odit nam, fugiat. Obcaecati dolor, cum alias nihil amet aspernatur quod voluptatibus, rerum ea repudiandae aliquid quasi ab.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quibusdam minima illum consequuntur beatae quaerat recusandae blanditiis a? Odit cumque eligendi quidem dolor nam, tempore vel unde perferendis. Consectetur, atque.</p>
+      </div>
+
+      <div class="col s12 m6">
+        <ul class="tag-container">
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#LongTagName</a></li>
+          <li><a href="#">#TagName</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#LongTagName</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#LongTagName</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#Tag</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- reviews -->
+    <div class="row">
+      <div class="col s12 review">
+        <h3>Review #1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta praesentium voluptatibus nostrum perspiciatis consequuntur labore non velit ipsam accusamus veritatis soluta aut fugiat, ipsa quibusdam quisquam! Consequatur ut porro ea.</p>
+
+        <h3>Review #2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta praesentium voluptatibus nostrum perspiciatis consequuntur labore non velit ipsam accusamus veritatis soluta aut fugiat, ipsa quibusdam quisquam! </p>
+
+        <h3>Review #3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+
     </div>
   </div>
 
@@ -149,7 +149,7 @@
             <nav class="nav-wrapper footer-nav">
               <ul>
                 <li><a href="index.html">Search</a></li>
-                <li><a href="stores.html">Stores</a></li>
+                <li><a href="stores.html" class="link-active">Stores</a></li>
                 <li><a href="topten.html">Top Ten</a></li>
                 <li><a href="addstore.html">Add Store</a></li>
               </ul>

@@ -129,6 +129,20 @@
       padding:10px;
     }
 
+    .starActive
+    {
+      background-size:60px 60px;
+      height:60px;
+      width:60px;
+    }
+
+    .star-inactive
+    {
+      background-size:60px 60px;
+      height:60px;
+      width:60px;
+    }
+
     .store-image
     {
       display:none;
@@ -282,6 +296,14 @@
       padding:24px 5%;
     }
 
+    .starActive,
+    .star-inactive
+    {
+        background-size:60px 60px;
+        height:60px;
+        width:60px;
+    }
+
     .store-image { display:block; }
 
     .page-footer h4 { font-size:225%; }
@@ -366,6 +388,20 @@
       background-size: 36px 36px;
       width: 36px;
       height: 36px;
+  }
+
+  .starActive
+  {
+    background-size:48px 48px;
+    height:48px;
+    width:48px;
+  }
+
+  .star-inactive
+  {
+    background-size:48px 48px;
+    height:48px;
+    width:48px;
   }
 
   .page-footer h4 { font-size:200%; }

@@ -450,6 +450,12 @@ template {
   display: none;
 }
 
+/*
+rust= "#a43a23"
+lime= "#c3bf3e"
+white= "#ffffff"
+*/
+
 /* GLOBAL */
 
 /* HW for 8/25+ convert logo to SVG; replace on index.html */
@@ -887,6 +893,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 {
   list-style-type: decimal;
   display:list-item;
+  text-transform: capitalize;
 }
 
 .container.content ol li a,
@@ -896,6 +903,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   padding:0;
   color:#a43a23;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .container.content ol li a:hover,
@@ -911,11 +919,53 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   text-transform: capitalize;
 }
 
-/* used by topten.html */
+/* used by individual store page */
 
-.topten-list
+ul.star-container
+ul.tag-container
 {
-/*  list-style:upper-roman;*/
+  margin:0;
+  padding:0;
+  height: auto;
+  position: relative;
+}
+
+ul.star-container
+{
+  display:inline-block;
+  width:100%;
+}
+
+.starActive
+{
+  background-image: url("../icons/webIcons/starActive.svg");
+  float:left;
+}
+
+.star-inactive
+{
+  background-image: url("../icons/webIcons/starInactive.svg");
+  float:left;
+}
+
+ul.tag-container li
+{
+  float:left;
+  margin:10px 4px;
+  padding:4px;
+  border-radius:10px;
+  border:1px solid #95989a;
+  background-color:#a43a23;
+}
+
+ul.tag-container li a
+{
+  color:#fff;
+}
+
+ul.tag-container li a:hover
+{
+  color:#000;
 }
 
 /* login + forget password form */
@@ -1175,6 +1225,20 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
       padding:10px;
     }
 
+    .starActive
+    {
+      background-size:60px 60px;
+      height:60px;
+      width:60px;
+    }
+
+    .star-inactive
+    {
+      background-size:60px 60px;
+      height:60px;
+      width:60px;
+    }
+
     .store-image
     {
       display:none;
@@ -1329,6 +1393,14 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
       padding:24px 5%;
     }
 
+    .starActive,
+    .star-inactive
+    {
+        background-size:60px 60px;
+        height:60px;
+        width:60px;
+    }
+
     .store-image { display:block; }
 
     .page-footer h4 { font-size:225%; }
@@ -1415,6 +1487,20 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
       background-size: 36px 36px;
       width: 36px;
       height: 36px;
+  }
+
+  .starActive
+  {
+    background-size:48px 48px;
+    height:48px;
+    width:48px;
+  }
+
+  .star-inactive
+  {
+    background-size:48px 48px;
+    height:48px;
+    width:48px;
   }
 
   .page-footer h4 { font-size:200%; }
