@@ -121,6 +121,9 @@
     {
       margin:12px 0 12px 10%;
     }
+
+
+    .container.content ol li,
     .container.content ul.store_names li
     {
       padding:10px;
