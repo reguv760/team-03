@@ -6,11 +6,14 @@
   <title>The Retail Apocalypse</title>
   <meta name="keywords" content="stores, store closing, bankruptcy">
   <meta name="description" content="A site showcasing all the retail stores closed in the United States">
-  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro - AIGA : SUMMER 2017 ">
+  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro - AINOHO : SUMMER 2017 ">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="temp/styles/styles.css" />
+
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css"/>
+  <!-- endbuild -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!--- JS -->
@@ -299,3 +302,29 @@ after git hub push master///
 --- master branch (source) -- save
 
 -->
+
+
+<!--- push to gitHUB --->
+> kingluddite/responsive mobile design/
+> branch: build-task > commits > complete build
+(under build-task branch)
+> scroll down > install package.json : npm install NEW GREEN stuff
+> create build.js in gulp/tasks/
+
+> view kingluddite build.js > VIEW > RAW > copy and paste into MY build.js
+
+> gulpfile.js
+> add require("build.js")
+
+> add comment to temp/styles - ref: kingluddite index.html
+
+> test: gulp build
+
+> after build, git add -A
+> git commit -m "build message"
+> gulp watch (to test locally
+> git checkout master
+> git merge build-task (new branch) > collects build-task INTO master (while in master branch)
+> git push origin master (because I AM upstream)
+
+> after uploaded go to github website > repo > build-task >Settings > GitHub Pages: master branch /docs folder

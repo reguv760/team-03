@@ -670,7 +670,8 @@ nav ul a:hover {
 .hero_image .search_bar input,
 .container.login_form input,
 .container.forgetpass_form input,
-.container.newuser_form input
+.container.newuser_form input,
+.container.addstore-form input
 {
   display:inline-block;
   color:#000;
@@ -686,7 +687,10 @@ nav ul a:hover {
 .hero_image .search_bar input::-webkit-input-placeholder,
 .container.login_form input::-webkit-input-placeholder,
 .container.forgetpass_form input::-webkit-input-placeholder,
-.container.newuser_form input::-webkit-input-placeholder
+.container.newuser_form input::-webkit-input-placeholder,
+.addstore-form input[type="text"]::-webkit-input-placeholder,
+.addstore-form textarea::-webkit-input-placeholder,
+.addstore-form input[type="checkbox"]::-webkit-input-placeholder
 {
     color: #000;
 }
@@ -694,7 +698,10 @@ nav ul a:hover {
 .hero_image .search_bar input:-ms-input-placeholder,
 .container.login_form input:-ms-input-placeholder,
 .container.forgetpass_form input:-ms-input-placeholder,
-.container.newuser_form input:-ms-input-placeholder
+.container.newuser_form input:-ms-input-placeholder,
+.addstore-form input[type="text"]:-ms-input-placeholder,
+.addstore-form textarea:-ms-input-placeholder,
+.addstore-form input[type="checkbox"]:-ms-input-placeholder
 {
     color: #000;
 }
@@ -702,7 +709,10 @@ nav ul a:hover {
 .hero_image .search_bar input::placeholder,
 .container.login_form input::placeholder,
 .container.forgetpass_form input::placeholder,
-.container.newuser_form input::placeholder
+.container.newuser_form input::placeholder,
+.addstore-form input[type="text"]::placeholder,
+.addstore-form textarea::placeholder,
+.addstore-form input[type="checkbox"]::placeholder
 {
     color: #000;
 }
@@ -713,7 +723,10 @@ nav ul a:hover {
 .container.forgetpass_form input[type=text]:focus + label,
 .container.newuser_form input[type=text]:focus + label,
 .container.newuser_form input[type=email]:focus + label,
-.container.newuser_form input[type=password]:focus + label
+.container.newuser_form input[type=password]:focus + label,
+.addstore-form input[type="text"]:focus:not(.browser-default):not([readonly]) + label,
+.addstore-form textarea:focus + label,
+.addstore-form input[type="checkbox"]:focus + label,
 {
   color: #000;
 }
@@ -726,12 +739,37 @@ nav ul a:hover {
 .container.forgetpass_form input[type=text]:focus,
 .container.newuser_form input[type=text]:focus,
 .container.newuser_form input[type=email]:focus,
-.container.newuser_form input[type=password]:focus
+.container.newuser_form input[type=password]:focus,
+.addstore-form input[type="text"]:focus:not(.browser-default):not([readonly]),
+.addstore-form input[type="checkbox"]:focus,
+.addstore-form textarea
 {
    border-bottom: none;
    -webkit-box-shadow: 0 1px 0 0 #000;
            box-shadow: 0 1px 0 0 #000;
  }
+
+/* add store */
+
+.addstore-form .dropdown-content li > span { color:#000; }
+
+.addstore-form input[type=text]:focus + label { border-bottom: none; }
+
+.addstore-form input[type="checkbox"]:checked + label { color:#a43a23; }
+
+.addstore-form textarea
+ {
+  height:125px;
+  padding:4px;
+ }
+
+.addstore-form input[type="checkbox"],
+  .addstore-form input[type="checkbox"] + label
+ {
+  color:#000;
+}
+
+/* hero image */
 
 .hero_image img {
   display:block;
@@ -919,6 +957,83 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   text-transform: capitalize;
 }
 
+/* add store page */
+
+.select-wrapper span.caret
+{
+  z-index:100;
+  top:24px;
+}
+
+ul.checkbox-container
+{
+  position:relative;
+  height:auto;
+}
+
+ul.checkbox-container li
+{
+  float:left;
+  margin:10px;
+}
+
+.checkbox-area
+{
+  margin:20px auto;
+}
+
+.rustCheck:checked + label:before {
+  top: -4px;
+  left: -3px;
+  width: 12px;
+  height: 22px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #a43a23; /* You need to change the colour here */
+  border-bottom: 2px solid #a43a23; /* And here */
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+/* store pagination */
+
+ul.pagination
+{
+  width:59.2%;
+  display:block;
+  margin:0 auto;
+}
+
+ul.pagination li
+{
+  text-transform: uppercase;
+}
+
+ul.pagination li a
+{
+  padding:0 6px;
+  opacity:1.0;
+}
+
+ul.pagination li a:hover
+{
+  opacity:0.75;
+ }
+
+ul.pagination li.active
+ {
+  background-color:#a43a23;
+ }
+
+.store-image img
+{
+  display:block;
+  margin:24px auto;
+}
+
 /* used by individual store page */
 
 ul.star-container
@@ -980,7 +1095,9 @@ ul.tag-container li a:hover
 
 .container.login_form input,
 .container.forgetpass_form input,
-.container.newuser_form input
+.container.newuser_form input,
+.container.addstore-form input,
+.container.addstore-form textarea
 {
   background-color: rgba(149, 152, 154, 1);
   border-radius: 2px;
@@ -989,7 +1106,8 @@ ul.tag-container li a:hover
 
 .container.login_form button,
 .container.forgetpass_form button,
-.container.newuser_form button
+.container.newuser_form button,
+.container.addstore-form button
 {
   margin:10px;
 }
@@ -1244,6 +1362,12 @@ ul.tag-container li a:hover
       display:none;
     }
 
+    /* stores page */
+    ul.pagination li a
+    {
+      font-size:1.2rem;
+    }
+
     .page-footer h4 { font-size:190%; }
 }
 
@@ -1403,6 +1527,11 @@ ul.tag-container li a:hover
 
     .store-image { display:block; }
 
+    ul.pagination li a
+    {
+      font-size:1rem;
+    }
+
     .page-footer h4 { font-size:225%; }
     .page-footer .footer-nav ul li { font-size:125%; }
 }
@@ -1502,6 +1631,11 @@ ul.tag-container li a:hover
     height:48px;
     width:48px;
   }
+
+   ul.pagination li a
+{
+  font-size:1.1rem;
+}
 
   .page-footer h4 { font-size:200%; }
 }

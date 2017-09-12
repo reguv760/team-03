@@ -148,6 +148,12 @@
       display:none;
     }
 
+    /* stores page */
+    ul.pagination li a
+    {
+      font-size:1.2rem;
+    }
+
     .page-footer h4 { font-size:190%; }
 }
 
@@ -306,6 +312,11 @@
 
     .store-image { display:block; }
 
+    ul.pagination li a
+    {
+      font-size:1rem;
+    }
+
     .page-footer h4 { font-size:225%; }
     .page-footer .footer-nav ul li { font-size:125%; }
 }
@@ -403,6 +414,11 @@
     height:48px;
     width:48px;
   }
+
+   ul.pagination li a
+{
+  font-size:1.1rem;
+}
 
   .page-footer h4 { font-size:200%; }
 }

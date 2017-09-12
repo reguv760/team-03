@@ -6,11 +6,14 @@
   <title>The Retail Apocalypse</title>
   <meta name="keywords" content="stores, store closing, bankruptcy">
   <meta name="description" content="A site showcasing all the retail stores closed in the United States">
-  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro - AIGA : SUMMER 2017 ">
+  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro - AINOHO : SUMMER 2017 ">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="temp/styles/styles.css" />
+
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css"/>
+  <!-- endbuild -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!--- JS -->
@@ -81,29 +84,210 @@
 
    <div class="container content">
 
-   <!-- single col setup -->
+   <!-- A section -->
     <div class="row">
-      <div class="col m12">
-        <h2>Area for Pagination</h2>
-        <h3>This is a subhead</h3>
-        <p>Place pagination function code in this section</p>
+      <div class="col s12">
+          <ul id="a" class="pagination">
+            <li class="active"><a href="#a">A</a></li>
+            <li class="waves-effect"><a href="#b">B</a></li>
+            <li class="waves-effect"><a href="#!">c</a></li>
+            <li class="waves-effect"><a href="#!">d</a></li>
+            <li class="waves-effect"><a href="#!">e</a></li>
+            <li class="waves-effect"><a href="#!">f</a></li>
+            <li class="waves-effect"><a href="#!">g</a></li>
+            <li class="waves-effect"><a href="#!">h</a></li>
+            <li class="waves-effect"><a href="#!">i</a></li>
+            <li class="waves-effect"><a href="#j">j</a></li>
+            <li class="waves-effect"><a href="#k">k</a></li>
+            <li class="waves-effect"><a href="#!">l</a></li>
+            <li class="waves-effect"><a href="#!">m</a></li>
+            <li class="waves-effect"><a href="#!">n</a></li>
+            <li class="waves-effect"><a href="#!">o</a></li>
+            <li class="waves-effect"><a href="#!">p</a></li>
+            <li class="waves-effect"><a href="#!">q</a></li>
+            <li class="waves-effect"><a href="#!">r</a></li>
+            <li class="waves-effect"><a href="#!">s</a></li>
+            <li class="waves-effect"><a href="#!">t</a></li>
+            <li class="waves-effect"><a href="#!">u</a></li>
+            <li class="waves-effect"><a href="#!">v</a></li>
+            <li class="waves-effect"><a href="#!">w</a></li>
+            <li class="waves-effect"><a href="#!">x</a></li>
+            <li class="waves-effect"><a href="#!">y</a></li>
+            <li class="waves-effect"><a href="#!">z</a></li>
+          </ul>
       </div>
     </div>
 
     <!-- 2 col setup -->
     <div class="row">
       <div class="col s12 m6">
-
-    <h2>Area for Store List</h2>
-    <h3>This is a subhead</h3>
-      <p>Place alphabetical list of stores (per letter)</p>
+        <ul class="store_names">
+          <li><a href="#">Store #1</a></li>
+          <li><a href="#">Store #2</a></li>
+          <li><a href="#">Store #3</a></li>
+          <li><a href="#">Store #4</a></li>
+        </ul>
       </div>
       <div class="col s12 m6 store-image">
-        <h2>Area for image per letter</h2>
-        <h3>This is a subhead #2</h3>
-        <p>Place image here</p>
+        <img src="assets/images/stores/hma2_cropped.jpg"/>
       </div>
     </div>
+
+    <!-- B section -->
+    <div class="row">
+      <div class="col s12">
+          <ul id="b" class="pagination">
+            <li class="waves-effect"><a href="#a">A</a></li>
+            <li class="active"><a href="#b">B</a></li>
+            <li class="waves-effect"><a href="#!">c</a></li>
+            <li class="waves-effect"><a href="#!">d</a></li>
+            <li class="waves-effect"><a href="#!">e</a></li>
+            <li class="waves-effect"><a href="#!">f</a></li>
+            <li class="waves-effect"><a href="#!">g</a></li>
+            <li class="waves-effect"><a href="#!">h</a></li>
+            <li class="waves-effect"><a href="#!">i</a></li>
+            <li class="waves-effect"><a href="#j">j</a></li>
+            <li class="waves-effect"><a href="#k">k</a></li>
+            <li class="waves-effect"><a href="#!">l</a></li>
+            <li class="waves-effect"><a href="#!">m</a></li>
+            <li class="waves-effect"><a href="#!">n</a></li>
+            <li class="waves-effect"><a href="#!">o</a></li>
+            <li class="waves-effect"><a href="#!">p</a></li>
+            <li class="waves-effect"><a href="#!">q</a></li>
+            <li class="waves-effect"><a href="#!">r</a></li>
+            <li class="waves-effect"><a href="#!">s</a></li>
+            <li class="waves-effect"><a href="#!">t</a></li>
+            <li class="waves-effect"><a href="#!">u</a></li>
+            <li class="waves-effect"><a href="#!">v</a></li>
+            <li class="waves-effect"><a href="#!">w</a></li>
+            <li class="waves-effect"><a href="#!">x</a></li>
+            <li class="waves-effect"><a href="#!">y</a></li>
+            <li class="waves-effect"><a href="#!">z</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- 2 col setup -->
+    <div class="row">
+      <div class="col s12 m6">
+        <ul class="store_names">
+          <li><a href="#">Store #1</a></li>
+          <li><a href="#">Store #2</a></li>
+          <li><a href="#">Store #3</a></li>
+          <li><a href="#">Store #4</a></li>
+          <li><a href="#">Store #5</a></li>
+          <li><a href="#">Store #6</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m6 store-image">
+        <img src="assets/images/stores/sears_indoor-cropped.jpg"/>
+      </div>
+    </div>
+
+    <!-- J section -->
+    <div class="row">
+      <div class="col s12">
+          <ul id="j" class="pagination">
+            <li class="waves-effect"><a href="#a">A</a></li>
+            <li class="waves-effect"><a href="#b">B</a></li>
+            <li class="waves-effect"><a href="#!">c</a></li>
+            <li class="waves-effect"><a href="#!">d</a></li>
+            <li class="waves-effect"><a href="#!">e</a></li>
+            <li class="waves-effect"><a href="#!">f</a></li>
+            <li class="waves-effect"><a href="#!">g</a></li>
+            <li class="waves-effect"><a href="#!">h</a></li>
+            <li class="waves-effect"><a href="#!">i</a></li>
+            <li class="active"><a href="#j">j</a></li>
+            <li class="waves-effect"><a href="#k">k</a></li>
+            <li class="waves-effect"><a href="#!">l</a></li>
+            <li class="waves-effect"><a href="#!">m</a></li>
+            <li class="waves-effect"><a href="#!">n</a></li>
+            <li class="waves-effect"><a href="#!">o</a></li>
+            <li class="waves-effect"><a href="#!">p</a></li>
+            <li class="waves-effect"><a href="#!">q</a></li>
+            <li class="waves-effect"><a href="#!">r</a></li>
+            <li class="waves-effect"><a href="#!">s</a></li>
+            <li class="waves-effect"><a href="#!">t</a></li>
+            <li class="waves-effect"><a href="#!">u</a></li>
+            <li class="waves-effect"><a href="#!">v</a></li>
+            <li class="waves-effect"><a href="#!">w</a></li>
+            <li class="waves-effect"><a href="#!">x</a></li>
+            <li class="waves-effect"><a href="#!">y</a></li>
+            <li class="waves-effect"><a href="#!">z</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- 2 col setup -->
+    <div class="row">
+      <div class="col s12 m6">
+        <ul class="store_names">
+          <li><a href="jcpenney.html">JCPenney</a></li>
+          <li><a href="#">Store #2</a></li>
+          <li><a href="#">Store #3</a></li>
+          <li><a href="#">Store #4</a></li>
+          <li><a href="#">Store #5</a></li>
+          <li><a href="#">Store #6</a></li>
+          <li><a href="#">Store #7</a></li>
+          <li><a href="#">Store #8</a></li>
+          <li><a href="#">Store #9</a></li>
+        </ul>
+      </div>
+
+      <div class="col s12 m6 store-image">
+        <img src="assets/images/stores/jcpenney-cropped.jpg">
+      </div>
+    </div>
+
+    <!-- K section -->
+    <div class="row">
+      <div class="col s12">
+          <ul id="k" class="pagination">
+            <li class="waves-effect"><a href="#a">A</a></li>
+            <li class="waves-effect"><a href="#b">B</a></li>
+            <li class="waves-effect"><a href="#!">c</a></li>
+            <li class="waves-effect"><a href="#!">d</a></li>
+            <li class="waves-effect"><a href="#!">e</a></li>
+            <li class="waves-effect"><a href="#!">f</a></li>
+            <li class="waves-effect"><a href="#!">g</a></li>
+            <li class="waves-effect"><a href="#!">h</a></li>
+            <li class="waves-effect"><a href="#!">i</a></li>
+            <li class="waves-effect"><a href="#j">j</a></li>
+            <li class="active"><a href="#k">k</a></li>
+            <li class="waves-effect"><a href="#!">l</a></li>
+            <li class="waves-effect"><a href="#!">m</a></li>
+            <li class="waves-effect"><a href="#!">n</a></li>
+            <li class="waves-effect"><a href="#!">o</a></li>
+            <li class="waves-effect"><a href="#!">p</a></li>
+            <li class="waves-effect"><a href="#!">q</a></li>
+            <li class="waves-effect"><a href="#!">r</a></li>
+            <li class="waves-effect"><a href="#!">s</a></li>
+            <li class="waves-effect"><a href="#!">t</a></li>
+            <li class="waves-effect"><a href="#!">u</a></li>
+            <li class="waves-effect"><a href="#!">v</a></li>
+            <li class="waves-effect"><a href="#!">w</a></li>
+            <li class="waves-effect"><a href="#!">x</a></li>
+            <li class="waves-effect"><a href="#!">y</a></li>
+            <li class="waves-effect"><a href="#!">z</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- 2 col setup -->
+    <div class="row">
+      <div class="col s12 m6">
+        <ul class="store_names">
+          <li><a href="#l">Store #1</a></li>
+          <li><a href="#">Store #2</a></li>
+          <li><a href="#">Store #3</a></li>
+        </ul>
+      </div>
+
+      <div class="col s12 m6 store-image">
+        <img src="assets/images/stores/radioShack-cropped.jpg">
+      </div>
+    </div>
+
   </div>
 
   <div class="page-footer">

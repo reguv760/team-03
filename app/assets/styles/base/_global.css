@@ -204,7 +204,8 @@ nav ul a:hover {
 .hero_image .search_bar input,
 .container.login_form input,
 .container.forgetpass_form input,
-.container.newuser_form input
+.container.newuser_form input,
+.container.addstore-form input
 {
   display:inline-block;
   color:#000;
@@ -216,10 +217,14 @@ nav ul a:hover {
   font-weight:700;
 }
 
+
 .hero_image .search_bar input::placeholder,
 .container.login_form input::placeholder,
 .container.forgetpass_form input::placeholder,
-.container.newuser_form input::placeholder
+.container.newuser_form input::placeholder,
+.addstore-form input[type="text"]::placeholder,
+.addstore-form textarea::placeholder,
+.addstore-form input[type="checkbox"]::placeholder
 {
     color: #000;
 }
@@ -230,7 +235,10 @@ nav ul a:hover {
 .container.forgetpass_form input[type=text]:focus + label,
 .container.newuser_form input[type=text]:focus + label,
 .container.newuser_form input[type=email]:focus + label,
-.container.newuser_form input[type=password]:focus + label
+.container.newuser_form input[type=password]:focus + label,
+.addstore-form input[type="text"]:focus:not(.browser-default):not([readonly]) + label,
+.addstore-form textarea:focus + label,
+.addstore-form input[type="checkbox"]:focus + label,
 {
   color: #000;
 }
@@ -242,12 +250,34 @@ nav ul a:hover {
 .container.forgetpass_form input[type=text]:focus,
 .container.newuser_form input[type=text]:focus,
 .container.newuser_form input[type=email]:focus,
-.container.newuser_form input[type=password]:focus
+.container.newuser_form input[type=password]:focus,
+.addstore-form input[type="text"]:focus:not(.browser-default):not([readonly]),
+.addstore-form input[type="checkbox"]:focus,
+.addstore-form textarea
 {
    border-bottom: none;
    box-shadow: 0 1px 0 0 #000;
  }
 
+
+/* add store */
+ .addstore-form .dropdown-content li > span { color:#000; }
+ .addstore-form input[type=text]:focus + label { border-bottom: none; }
+ .addstore-form input[type="checkbox"]:checked + label { color:$rust; }
+
+.addstore-form textarea
+ {
+  height:125px;
+  padding:4px;
+ }
+
+  .addstore-form input[type="checkbox"],
+  .addstore-form input[type="checkbox"] + label
+ {
+  color:#000;
+}
+
+/* hero image */
 .hero_image img {
   display:block;
   object-fit: cover;
@@ -415,6 +445,84 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   text-transform: capitalize;
 }
 
+/* add store page */
+.select-wrapper span.caret
+{
+  z-index:100;
+  top:24px;
+}
+ul.checkbox-container
+{
+  position:relative;
+  height:auto;
+}
+
+ul.checkbox-container li
+{
+  float:left;
+  margin:10px;
+}
+
+.checkbox-area
+{
+  margin:20px auto;
+}
+
+.rustCheck:checked + label:before {
+  top: -4px;
+  left: -3px;
+  width: 12px;
+  height: 22px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid $rust; /* You need to change the colour here */
+  border-bottom: 2px solid $rust; /* And here */
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+/* store pagination */
+ul.pagination
+{
+  width:59.2%;
+  display:block;
+  margin:0 auto;
+}
+ul.pagination li
+{
+  text-transform: uppercase;
+}
+
+ul.pagination li a
+{
+  padding:0 6px;
+  opacity:1.0;
+}
+
+ul.pagination li a:hover
+{
+  opacity:0.75;
+ }
+
+ul.pagination li.active
+ {
+  background-color:$rust;
+ }
+
+.store-image img
+{
+  display:block;
+  margin:24px auto;
+}
 /* used by individual store page */
 ul.star-container
 ul.tag-container
@@ -473,7 +581,9 @@ ul.tag-container li a:hover
 
 .container.login_form input,
 .container.forgetpass_form input,
-.container.newuser_form input
+.container.newuser_form input,
+.container.addstore-form input,
+.container.addstore-form textarea
 {
   background-color: rgba(149, 152, 154, 1);
   border-radius: 2px;
@@ -482,7 +592,8 @@ ul.tag-container li a:hover
 
 .container.login_form button,
 .container.forgetpass_form button,
-.container.newuser_form button
+.container.newuser_form button,
+.container.addstore-form button
 {
   margin:10px;
 }
