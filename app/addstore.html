@@ -87,7 +87,45 @@
       <div class="col m12">
         <h2>Add Store</h2>
         <h3>This is a subhead</h3>
-        <p>Place Add Store form code in this section</p>
+        <p>Place Add Store form code in this section
+            <div class="row">
+              <form class="col s12" action="#">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="Store Name" type="text" class="validate" placeholder="Store Name">
+                    <label class="active" for="storename"></label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="Store Location" type="text" class="validate" placeholder="Store Location">
+                    <label class="active" for="storelocation"></label>
+                  </div>
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Select Store Type</option>
+                      <option value="1">Clothing</option>
+                      <option value="2">Home Goods</option>
+                      <option value="3">Electronics</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p>
+                      <input type="checkbox" id="test1" />
+                      <label for="test1">Sale</label>
+                    </p>
+                      <p>
+                      <input type="checkbox" id="test2" />
+                      <label for="test2">Clearance</label>
+                    </p>
+                      <p>
+                      <input type="checkbox" id="test3" />
+                      <label for="test3">Closing Soon</label>
+                    </p>
+                  </div>
+                  <input type="submit" title="submit">
+                </div>
+              </form>
+            </div>
+        </p>
       </div>
     </div>
   </div>
@@ -125,9 +163,6 @@
         </div>
     </div>
   </div>
-
-    <script src="assets/js/mapDirections.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_j8JAi0b-c9s55a_MGtTfYLzZymswB6Q&callback=initMap"></script>
 
 </body>
 </html>
