@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+  <title>The Retail Apocalypse</title>
+  <meta name="keywords" content="stores, store closing, bankruptcy">
+  <meta name="description" content="A site showcasing all the retail stores closed in the United States">
+  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro - AINOHO : SUMMER 2017">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/styles-b95c7baa60.css"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--- JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+
+</head>
+<body>
+    <div class="container header ">
+        <div class="row">
+          <div class="col s12">
+            <ul class="social">
+              <li class="textlink"><a href="login.html">User Login</a></li>
+              <li class="textlink"><a href="newuser.html">Login Registration</a></li>
+              <li><a href="#"><div class="facebook-socialIcon"></div></a></li>
+              <li><a href="#"><div class="twitter-socialIcon"></div></a></li>
+              <li><a href="#"><div class="twitterFollow-socialIcon"></div></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- area for mobileMenu icon -->
+        <!-- available when screen res hits below 600px -->
+        <div class="row mobileHeader">
+          <div class="row">
+            <div class="col s12">
+              <nav class="nav-wrapper">
+                <a href="#" data-activates="mobileMenu" class="button-collapse"><div class="mobilemenu-icon"></div></a>
+                <ul class="side-nav" id="mobileMenu">
+                  <li><a href="index.html">Search</a></li>
+                  <li><a href="stores.html">Stores</a></li>
+                  <li><a href="#" class="link-active">Top Ten</a></li>
+                  <li><a href="addstore.html">Add Store</a></li>
+                  <li><a href="login.html">User Login</a></li>
+                  <li><a href="newuser.html">Login Registration</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!--- area for desktop+ -->
+        <div class="row">
+          <div class="col s12 m4 l3">
+            <!-- logo -->
+            <div class="logo">
+              <img src="assets/images/retailapocalypse-logo.svg"/>
+            </div>
+          </div>
+
+          <div class="col s6 m8 l9 ">
+            <nav class="nav-wrapper desktop-nav">
+              <ul>
+                <li><a href="index.html"><div class="searchicon-web"></div>Search</a></li>
+                <li><a href="stores.html"><div class="storesicon-web"></div>Stores</a></li>
+                <li><a href="#" class="link-active"><div class="topten-web icon-active"></div>Top Ten</a></li>
+                <li><a href="addstore.html"><div class="addstore-web"></div>Add Store</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero_image topten-hero">
+     <!--  <div class="search_bar">
+          <div class="container">
+              <input placeholder="Search by city or zip code" type="text">
+              <a href="#"><div class="searchicon-web-black"></div></a>
+          </div>
+        </div> -->
+          <div class="topten-stores_desktop">
+            <div class="topten-stores">
+              <div class="topten-item white-bg"><img src="assets/images/topten/gamestop.png"></div>
+              <div class="topten-item blue-bg"><img src="assets/images/topten/sears.png"></div>
+              <div class="topten-item af_blue-bg"><img src="assets/images/topten/a&f.png"></div>
+              <div class="topten-item white-bg"><img src="assets/images/topten/macys.png"></div>
+              <div class="topten-item jcpenney_tan-bg"><img src="assets/images/topten/jcpenney.png"></div>
+            </div>
+            <div class="topten-stores">
+               <div class="topten-item yellow-bg"><img src="assets/images/topten/payless.png"></div>
+               <div class="topten-item white-bg"><img src="assets/images/topten/kmart.png"></div>
+              <div class="topten-item red-bg"><img src="assets/images/topten/guess.png"></div>
+              <div class="topten-item crocs_lime-bg"><img src="assets/images/topten/crocs.png"></div>
+              <div class="topten-item bebe_magenta-bg"><img src="assets/images/topten/bebe.png"></div>
+            </div>
+          </div>
+
+          <!-- mobile -->
+          <div class="topten-stores_mobile">
+            <div class="topten-stores">
+              <div class="topten-item white-bg"><img src="assets/images/topten/gamestop.png"></div>
+              <div class="topten-item blue-bg"><img src="assets/images/topten/sears.png"></div>
+            </div>
+            <div class="topten-stores">
+              <div class="topten-item af_blue-bg"><img src="assets/images/topten/a&f.png"></div>
+              <div class="topten-item white-bg"><img src="assets/images/topten/macys.png"></div>
+
+            </div>
+            <div class="topten-stores">
+              <div class="topten-item jcpenney_tan-bg"><img src="assets/images/topten/jcpenney.png"></div>
+               <div class="topten-item yellow-bg"><img src="assets/images/topten/payless.png"></div>
+            </div>
+            <div class="topten-stores">
+               <div class="topten-item white-bg"><img src="assets/images/topten/kmart.png"></div>
+              <div class="topten-item red-bg"><img src="assets/images/topten/guess.png"></div>
+            </div>
+            <div class="topten-stores">
+              <div class="topten-item crocs_lime-bg"><img src="assets/images/topten/crocs.png"></div>
+              <div class="topten-item bebe_magenta-bg"><img src="assets/images/topten/bebe.png"></div>
+            </div>
+          </div>
+
+   </div>
+   <div class="container content topten-mobile">
+
+   <!-- single col setup -->
+    <div class="row">
+      <div class="col m12">
+        <h2>Top Ten</h2>
+        <!-- <h3>This is a subhead</h3> -->
+      </div>
+    </div>
+
+    <!-- 2 col setup -->
+    <div class="row">
+       <ol class="topten-list">
+          <li>
+            <a href="#">
+              <div class="col s12">
+                gamestop
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="col s12">
+                sears
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="col s12">
+                abercrombie & fitch
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="col s12">
+                macy's
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="col s6 m6">
+                JCPenney
+              </div>
+            </a>
+          </li>
+          <li>
+             <a href="#">
+              <div class="col s12">
+               payless shoesource
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="col s6 m6">
+                kmart
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="col s12">
+                guess
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="col s12">
+                crocs
+              </div>
+            </a>
+          </li>
+          <li>
+           <a href="#">
+              <div class="col s12">
+               bebe
+              </div>
+              </a>
+          </li>
+        </ol>
+    </div>
+
+    <!--- paragraph -->
+    <div class="row">
+      <div class="col m12">
+        <h3>Disclaimer:</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione labore accusamus aut voluptate eius ducimus, dolores, modi qui assumenda eaque officia molestias aliquid repellat laboriosam fugit earum exercitationem sint nostrum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, commodi labore et blanditiis sed magni quod minima asperiores mollitia excepturi assumenda earum ducimus nostrum possimus error, eveniet nesciunt eligendi ipsa.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="container">
+       <div class="row">
+          <div class="col s12 l4">
+            <h4>Navigation</h4>
+            <nav class="nav-wrapper footer-nav">
+              <ul>
+                <li><a href="index.html" >Search</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="#" class="link-active">Top Ten</a></li>
+                <li><a href="addstore.html">Add Store</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col s12 l4">
+            <h4>Slogan Container</h4>
+            <p>This is some witty slogan...</p>
+          </div>
+          <div class="col s12 l4">
+            <h4>The Retail Apocalypse</h4>
+            <p>3210 Main St.<br/>
+            Los Angeles, CA 90001<br/>
+            (323) 342 1230</p>
+
+            <ul class="social">
+                <li><a href="#"><div class="facebook-socialIcon"></div>Find us on Facebook</a></li>
+                <li><a href="#"><div class="twitter-socialIcon"></div>Give us a Tweet</a></li>
+                <li><a href="#"><div class="twitterFollow-socialIcon"></div>Follow us on Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!--- git commits
+
+(0). pull up-to-date master: git pull origin master
+1. create new branch [from master]: git checkout -b <branchName>
+2. add files that have been added/changed: git add -A
+3. add message for changes: git commit -m "some message"
+4. [from master]: git push origin master
+    [from fork]: git push upstream master
+
+5. Inform team mates about recent push.
+(6). To pull from fork: git pull upstream master
+
+-->
