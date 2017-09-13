@@ -521,10 +521,8 @@ ul.pagination li.active
 {
   display:block;
   margin:24px auto;
-  object-fit:fill;
-  width:90%;
-  height:auto;
 }
+
 /* used by individual store page */
 ul.star-container
 ul.tag-container

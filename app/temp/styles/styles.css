@@ -1031,10 +1031,6 @@ ul.pagination li.active
 {
   display:block;
   margin:24px auto;
-  -o-object-fit:fill;
-     object-fit:fill;
-  width:90%;
-  height:auto;
 }
 
 /* used by individual store page */
@@ -1368,7 +1364,7 @@ ul.tag-container li a:hover
     /* stores page */
     ul.pagination
     {
-      width:100%;
+      width:85%;
     }
 
     ul.pagination li a

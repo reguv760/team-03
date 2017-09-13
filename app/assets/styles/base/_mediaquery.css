@@ -151,7 +151,7 @@
     /* stores page */
     ul.pagination
     {
-      width:100%;
+      width:85%;
     }
 
     ul.pagination li a
