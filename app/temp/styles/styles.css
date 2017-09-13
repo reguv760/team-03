@@ -916,7 +916,6 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 .container.content ul.store_names
 {
   margin:0;
-  padding:0;
 }
 
 .container.content ol li,
@@ -951,10 +950,16 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   text-decoration: none;
 }
 
+.store-distance:hover
+{
+  color: #a43a23;
+}
+
 .store-distance
 {
   text-align: right;
   text-transform: capitalize;
+  color: #000;
 }
 
 /* add store page */
@@ -1003,7 +1008,7 @@ ul.checkbox-container li
 ul.pagination
 {
   display:block;
-  margin:0 auto;
+  margin:10px auto;
 }
 
 ul.pagination li
@@ -1332,7 +1337,7 @@ ul.tag-container li a:hover
 
     .container.content ol li
     {
-      margin:12px 0 12px 10%;
+      margin:12px 0 12px 7.5%;
     }
 
 
@@ -1364,7 +1369,7 @@ ul.tag-container li a:hover
     /* stores page */
     ul.pagination
     {
-      width:85%;
+      width:100%;
     }
 
     ul.pagination li a
@@ -1505,9 +1510,10 @@ ul.tag-container li a:hover
       width:96%;
     }
 
+    /* used by index, stores, topten */
     .container.content ol li
     {
-      margin:24px 0 24px 10%;
+      margin:20px 0 24px 10%;
     }
     .container.content ol,
     .container.content ul.store_names
@@ -1518,7 +1524,7 @@ ul.tag-container li a:hover
     .container.content ul.store_names li
     {
       width:100%;
-      padding:24px 5%;
+      padding:20px 5%;
     }
 
     .starActive,
@@ -1531,9 +1537,10 @@ ul.tag-container li a:hover
 
     .store-image { display:block; }
 
+    /* used by storepage */
     ul.pagination
     {
-      width:35%;
+      width:50%;
     }
 
     ul.pagination li a
@@ -1541,6 +1548,7 @@ ul.tag-container li a:hover
       font-size:1rem;
     }
 
+    /* footer area */
     .page-footer h4 { font-size:225%; }
     .page-footer .footer-nav ul li { font-size:125%; }
 }
@@ -1676,7 +1684,7 @@ ul.tag-container li a:hover
 
       ul.pagination
       {
-        width:34.5%;
+        width:34.2%;
       }
 }
 

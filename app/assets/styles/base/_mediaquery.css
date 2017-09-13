@@ -119,7 +119,7 @@
 
     .container.content ol li
     {
-      margin:12px 0 12px 10%;
+      margin:12px 0 12px 7.5%;
     }
 
 
@@ -151,7 +151,7 @@
     /* stores page */
     ul.pagination
     {
-      width:85%;
+      width:100%;
     }
 
     ul.pagination li a
@@ -291,9 +291,10 @@
       width:96%;
     }
 
+    /* used by index, stores, topten */
     .container.content ol li
     {
-      margin:24px 0 24px 10%;
+      margin:20px 0 24px 10%;
     }
     .container.content ol,
     .container.content ul.store_names
@@ -304,7 +305,7 @@
     .container.content ul.store_names li
     {
       width:100%;
-      padding:24px 5%;
+      padding:20px 5%;
     }
 
     .starActive,
@@ -317,9 +318,10 @@
 
     .store-image { display:block; }
 
+    /* used by storepage */
     ul.pagination
     {
-      width:35%;
+      width:50%;
     }
 
     ul.pagination li a
@@ -327,6 +329,7 @@
       font-size:1rem;
     }
 
+    /* footer area */
     .page-footer h4 { font-size:225%; }
     .page-footer .footer-nav ul li { font-size:125%; }
 }
@@ -459,6 +462,6 @@
 
       ul.pagination
       {
-        width:34.5%;
+        width:34.2%;
       }
 }

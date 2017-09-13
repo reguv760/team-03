@@ -404,7 +404,6 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 .container.content ul.store_names
 {
   margin:0;
-  padding:0;
 }
 
 .container.content ol li,
@@ -439,10 +438,16 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
   text-decoration: none;
 }
 
+.store-distance:hover
+{
+  color: $rust;
+}
+
 .store-distance
 {
   text-align: right;
   text-transform: capitalize;
+  color: #000;
 }
 
 /* add store page */
@@ -494,7 +499,7 @@ ul.checkbox-container li
 ul.pagination
 {
   display:block;
-  margin:0 auto;
+  margin:10px auto;
 }
 ul.pagination li
 {
