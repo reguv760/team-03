@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+  <title>The Retail Apocalypse</title>
+  <meta name="keywords" content="stores, store closing, bankruptcy">
+  <meta name="description" content="A site showcasing all the retail stores closed in the United States">
+  <meta author="Team-03: Reggie Galang, Stephen Zamora, Jessica Gonzalez, Rosario T, Bridget Villatoro - AINOHO : SUMMER 2017 ">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/styles-b95c7baa60.css"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--- JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+
+</head>
+<body>
+    <div class="container header">
+        <div class="row">
+          <div class="col s12">
+            <ul class="social">
+              <li class="textlink"><a href="login.html">User Login</a></li>
+              <li class="textlink"><a href="newuser.html">Login Registration</a></li>
+              <li><a href="#"><div class="facebook-socialIcon"></div></a></li>
+              <li><a href="#"><div class="twitter-socialIcon"></div></a></li>
+              <li><a href="#"><div class="twitterFollow-socialIcon"></div></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- area for mobileMenu icon -->
+        <!-- available when screen res hits below 600px -->
+        <div class="row mobileHeader">
+          <div class="row">
+            <div class="col s12">
+              <nav class="nav-wrapper">
+                <a href="#" data-activates="mobileMenu" class="button-collapse"><div class="mobilemenu-icon"></div></a>
+                <ul class="side-nav" id="mobileMenu">
+                  <li><a href="index.html">Search</a></li>
+                  <li><a href="stores.html" class="link-active">Stores</a></li>
+                  <li><a href="topten.html">Top Ten</a></li>
+                  <li><a href="addstore.html">Add Store</a></li>
+                  <li><a href="login.html">User Login</a></li>
+                  <li><a href="newuser.html">Login Registration</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!--- area for desktop+ -->
+        <div class="row">
+          <div class="col s12 m4 l3">
+            <!-- logo -->
+            <div class="logo">
+              <img src="assets/images/retailapocalypse-logo.svg"/>
+            </div>
+          </div>
+
+          <div class="col s6 m8 l9 ">
+            <nav class="nav-wrapper desktop-nav">
+              <ul>
+                <li><a href="index.html"><div class="searchicon-web"></div>Search</a></li>
+                <li><a href="stores.html"><div class="storesicon-web icon-active"></div>Stores</a></li>
+                <li><a href="topten.html"><div class="topten-web"></div>Top Ten</a></li>
+                <li><a href="addstore.html"><div class="addstore-web"></div>Add Store</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero_image image-hero">
+      <img src="assets/images/stores/jcpenney_angled.jpg">
+    </div>
+
+   <div class="container content">
+    <!-- 2 col setup -->
+    <!-- Name of Store, address, Star Ratings : ROW -->
+    <div class="row">
+      <div class="col s12 m6">
+        <h2>JC Penney</h2>
+        <p>123 Main St.<br/>Los Angeles, CA<br/>90001</p>
+      </div>
+
+      <div class="col s12 m6">
+        <h3>Store Rating:</h3>
+        <ul class="star-container">
+          <div class="starActive"/></div>
+          <div class="starActive"/></div>
+          <div class="starActive"/></div>
+          <div class="star-inactive"/></div>
+          <div class="star-inactive"/></div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Description + Tag Container -->
+    <div class="row">
+      <div class="col s12 m6">
+        <h3>Store Description</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ipsa, similique tenetur odit nam, fugiat. Obcaecati dolor, cum alias nihil amet aspernatur quod voluptatibus, rerum ea repudiandae aliquid quasi ab.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quibusdam minima illum consequuntur beatae quaerat recusandae blanditiis a? Odit cumque eligendi quidem dolor nam, tempore vel unde perferendis. Consectetur, atque.</p>
+      </div>
+
+      <div class="col s12 m6">
+        <ul class="tag-container">
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#LongTagName</a></li>
+          <li><a href="#">#TagName</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#LongTagName</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#LongTagName</a></li>
+          <li><a href="#">#Tag</a></li>
+          <li><a href="#">#Tag</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- reviews -->
+    <div class="row">
+      <div class="col s12 review">
+        <h3>Review #1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta praesentium voluptatibus nostrum perspiciatis consequuntur labore non velit ipsam accusamus veritatis soluta aut fugiat, ipsa quibusdam quisquam! Consequatur ut porro ea.</p>
+
+        <h3>Review #2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta praesentium voluptatibus nostrum perspiciatis consequuntur labore non velit ipsam accusamus veritatis soluta aut fugiat, ipsa quibusdam quisquam! </p>
+
+        <h3>Review #3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="container">
+       <div class="row">
+          <div class="col s12 l4">
+            <h4>Navigation</h4>
+            <nav class="nav-wrapper footer-nav">
+              <ul>
+                <li><a href="index.html">Search</a></li>
+                <li><a href="stores.html" class="link-active">Stores</a></li>
+                <li><a href="topten.html">Top Ten</a></li>
+                <li><a href="addstore.html">Add Store</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col s12 l4">
+            <h4>Slogan Container</h4>
+            <p>This is some witty slogan...</p>
+          </div>
+          <div class="col s12 l4 footer-address">
+            <h4>The Retail Apocalypse</h4>
+            <p>3210 Main St.<br/>
+            Los Angeles, CA 90001<br/>
+            (323) 342 1230</p>
+
+            <ul class="social">
+                <li><a href="#"><div class="facebook-socialIcon"></div>Find us on Facebook</a></li>
+                <li><a href="#"><div class="twitter-socialIcon"></div>Give us a Tweet</a></li>
+                <li><a href="#"><div class="twitterFollow-socialIcon"></div>Follow us on Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!--- git commits
+
+(0). pull up-to-date master: git pull origin master
+1. create new branch [from master]: git checkout -b <branchName>
+2. add files that have been added/changed: git add -A
+3. add message for changes: git commit -m "some message"
+4. [from master]: git push origin master
+    [from fork]: git push upstream master
+
+5. Inform team mates about recent push.
+(6). To pull from fork: git pull upstream master
+
+-->
