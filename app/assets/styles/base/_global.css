@@ -499,28 +499,27 @@ ul.checkbox-container li
 ul.pagination
 {
   display:block;
+  text-align: center;
   margin:10px auto;
+  background-color: $dark_gray;
+  border-radius: 4px;
 }
-ul.pagination li
-{
+ul.pagination li {
   text-transform: uppercase;
+  margin:0 2px;
 }
 
-ul.pagination li a
-{
-  padding:0 6px;
-  opacity:1.0;
-}
+ul.pagination li a { opacity:1.0; }
 
-ul.pagination li a:hover
-{
-  opacity:0.75;
- }
-
-ul.pagination li.active
- {
+ul.pagination li a:hover { opacity:0.75; }
+ul.pagination li.active {
   background-color:$rust;
- }
+}
+
+ul.pagination li.active a
+{
+  font-weight: 700;
+}
 
 .store-image img
 {

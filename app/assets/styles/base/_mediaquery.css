@@ -114,14 +114,13 @@
     .container.content ol,
     .container.content ul.store_names
     {
-      font-size:1.5em;
+      font-size:1.3em;
     }
 
     .container.content ol li
     {
       margin:12px 0 12px 7.5%;
     }
-
 
     .container.content ol li,
     .container.content ul.store_names li
@@ -149,9 +148,9 @@
     }
 
     /* stores page */
-    ul.pagination
+    ul.pagination li
     {
-      width:100%;
+      margin:4px;
     }
 
     ul.pagination li a
@@ -195,6 +194,7 @@
     height: 40px;
   }
 
+/* social header section */
   .container.header .mobileHeader { display:none; }
   .container.header ul.social li { margin-right:24px; }
   .container.header ul li.textlink { display:block; }
@@ -203,8 +203,6 @@
       line-height:2em;
       font-size:1em;
     }
-
-  .header .row .col .logo { }
 
   .searchicon-web { background-image:url("../icons/webIcons-WHITE/searchIcon.svg"); }
   .searchicon-web.icon-active { background-image:url("../icons/webIcons/searchIcon.svg"); }
@@ -319,15 +317,7 @@
     .store-image { display:block; }
 
     /* used by storepage */
-    ul.pagination
-    {
-      width:50%;
-    }
-
-    ul.pagination li a
-    {
-      font-size:1rem;
-    }
+    ul.pagination li a { font-size:1rem; }
 
     /* footer area */
     .page-footer h4 { font-size:225%; }
@@ -387,7 +377,7 @@
 
   .container.content h2 { font-size:275%; }
   .container.content h3 { font-size:250%; }
-    .container.content h4 { font-size:200%; }
+  .container.content h4 { font-size:200%; }
 
   .hero_image .search_bar .container { width:85%; }
 
@@ -428,15 +418,8 @@
     width:48px;
   }
 
-  ul.pagination
-  {
-    width:57.2%;
-  }
-
-   ul.pagination li a
-  {
-    font-size:1.1rem;
-  }
+/*  ul.pagination { width:65.8%; }*/
+  ul.pagination li a { font-size:1.1rem; }
 
   .page-footer h4 { font-size:200%; }
 }
@@ -459,9 +442,4 @@
     }
 
     .container.newuser_form #first_name { width:96%; }
-
-      ul.pagination
-      {
-        width:34.2%;
-      }
 }
