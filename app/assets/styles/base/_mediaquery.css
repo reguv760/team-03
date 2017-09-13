@@ -149,6 +149,11 @@
     }
 
     /* stores page */
+    ul.pagination
+    {
+      width:100%;
+    }
+
     ul.pagination li a
     {
       font-size:1.2rem;
@@ -312,6 +317,11 @@
 
     .store-image { display:block; }
 
+    ul.pagination
+    {
+      width:35%;
+    }
+
     ul.pagination li a
     {
       font-size:1rem;
@@ -415,10 +425,15 @@
     width:48px;
   }
 
+  ul.pagination
+  {
+    width:57.2%;
+  }
+
    ul.pagination li a
-{
-  font-size:1.1rem;
-}
+  {
+    font-size:1.1rem;
+  }
 
   .page-footer h4 { font-size:200%; }
 }
@@ -441,4 +456,9 @@
     }
 
     .container.newuser_form #first_name { width:96%; }
+
+      ul.pagination
+      {
+        width:34.5%;
+      }
 }

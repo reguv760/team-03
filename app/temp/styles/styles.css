@@ -1002,7 +1002,6 @@ ul.checkbox-container li
 
 ul.pagination
 {
-  width:59.2%;
   display:block;
   margin:0 auto;
 }
@@ -1032,6 +1031,10 @@ ul.pagination li.active
 {
   display:block;
   margin:24px auto;
+  -o-object-fit:fill;
+     object-fit:fill;
+  width:90%;
+  height:auto;
 }
 
 /* used by individual store page */
@@ -1363,6 +1366,11 @@ ul.tag-container li a:hover
     }
 
     /* stores page */
+    ul.pagination
+    {
+      width:100%;
+    }
+
     ul.pagination li a
     {
       font-size:1.2rem;
@@ -1527,6 +1535,11 @@ ul.tag-container li a:hover
 
     .store-image { display:block; }
 
+    ul.pagination
+    {
+      width:35%;
+    }
+
     ul.pagination li a
     {
       font-size:1rem;
@@ -1632,10 +1645,15 @@ ul.tag-container li a:hover
     width:48px;
   }
 
+  ul.pagination
+  {
+    width:57.2%;
+  }
+
    ul.pagination li a
-{
-  font-size:1.1rem;
-}
+  {
+    font-size:1.1rem;
+  }
 
   .page-footer h4 { font-size:200%; }
 }
@@ -1659,6 +1677,11 @@ ul.tag-container li a:hover
     }
 
     .container.newuser_form #first_name { width:96%; }
+
+      ul.pagination
+      {
+        width:34.5%;
+      }
 }
 
 

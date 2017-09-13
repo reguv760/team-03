@@ -493,7 +493,6 @@ ul.checkbox-container li
 /* store pagination */
 ul.pagination
 {
-  width:59.2%;
   display:block;
   margin:0 auto;
 }
@@ -522,6 +521,9 @@ ul.pagination li.active
 {
   display:block;
   margin:24px auto;
+  object-fit:fill;
+  width:90%;
+  height:auto;
 }
 /* used by individual store page */
 ul.star-container
