@@ -1381,7 +1381,7 @@ ul.tag-container li a:hover
 @media only screen and (min-width: 601px) {
   body
   {
-      background-image: url("../images/crackedbg-rust.jpg");
+      background-image: url("../images/crackedbg-rust-cropped.jpg");
   }
   .container.header { }
 
