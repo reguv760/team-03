@@ -6,8 +6,8 @@
 @media only screen and (min-width: 0px) {
   body { background-color:#a43a23; }
 
-       /* header - social media icons */
-    .container.header ul.social li { margin-right:12px; }
+  /* header - social media icons */
+  .container.header ul.social li { margin-right:12px; }
 
   .facebook-socialIcon { background-image: url("../icons/social/facebook-32.png"); }
   .twitter-socialIcon { background-image: url("../icons/social/twitter-32.png"); }
@@ -22,16 +22,16 @@
     background-size:30px 30px;
    }
 
-   .container.header ul li.textlink { display:none; }
+  .container.header ul li.textlink { display:none; }
 
   .container.header { }
 
  .container.header .mobilemenu-icon
   {
     background-image: url("../icons/webIcons-WHITE/menuMobile.svg");
-    height:48px;
-    width:48px;
-    background-size: 48px 48px;
+    height:40px;
+    width:40px;
+    background-size: 40px 40px;
   }
 
   .container.header ul li.textlink a
@@ -163,8 +163,7 @@
 
 /* check for res width from 600px++ */
 @media only screen and (min-width: 601px) {
-  body,
-  .header
+  body
   {
       background-image: url("../images/crackedbg-rust.jpg");
   }

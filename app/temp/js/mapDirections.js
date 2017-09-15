@@ -3,13 +3,16 @@ var currentPosLat, currentPosLong;
 
 var map;
 
+
 function initMap()
 {
+
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
 
   var currentTime = new Date().getHours();
 
+  //check if map is between these times:::
   if ((currentTime >= 7) && (currentTime <= 19))///7am - 7pm:::
   {
     //daytime mode::
@@ -104,6 +107,9 @@ function initMap()
         }
       ]
     });
+
+
+
   }
 
   directionsDisplay.setMap(map);
@@ -136,8 +142,8 @@ function initMap()
 
   map.addListener('idle', function()
   {
-   loadingAnimation.style.visibility = "hidden";
-   loadingAnimation.style.display = "none";
+   // loadingAnimation.style.visibility = "hidden";
+   // loadingAnimation.style.display = "none";
   });
 
    //changeHandler for dropDowns:::
@@ -168,8 +174,8 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay)
   }
 
   //display loading map animation:::
-  loadingAnimation.style.visibility = "visible";
-  loadingAnimation.style.display = "block";
+  // loadingAnimation.style.visibility = "visible";
+  // loadingAnimation.style.display = "block";
 
   directionsService.route({
    origin: selectedOrigin,

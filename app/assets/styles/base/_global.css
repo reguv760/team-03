@@ -45,14 +45,6 @@ h2 { text-transform: uppercase; }
 
 .container.header .mobileHeader { margin-bottom:10px; }
 
-.container.header .mobilemenu-icon
-{
-  background-image: url("../icons/webIcons-WHITE/menuMobile.svg");
-  height:40px;
-  width:40px;
-  background-size: 40px 40px;
-}
-
 .container.header ul.social
 {
   float:right;
@@ -183,6 +175,11 @@ nav ul a:hover {
   float:left;
   z-index:1;
   color:#222;
+}
+
+#map-display
+{
+  display:none;
 }
 
 .hero_image .search_bar .container {  }
@@ -454,7 +451,7 @@ a .searchicon-web-black:hover { background-color: rgba(164, 58, 35, 0.75); }
 .select-wrapper span.caret
 {
   z-index:100;
-  top:24px;
+  line-height:54px;
 }
 ul.checkbox-container
 {

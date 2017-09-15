@@ -127,6 +127,10 @@ function initMap()
      infoWindow.setPosition(pos);
      infoWindow.setContent('Location found.');
      map.setCenter(pos);
+
+    var storeList = document.getElementById('map-display');
+    storeList.style.display = "block";
+
    }, function() {
      handleLocationError(true, infoWindow, map.getCenter());
    });
