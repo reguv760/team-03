@@ -571,6 +571,16 @@ ul.tag-container li a:hover
 {
   color:#000;
 }
+
+.by-reviewAuthor
+{
+  display:block;
+  text-align: right;
+  font-weight: 700;
+  font-style: italic;
+  margin:4px 12.5% 4px 0;
+}
+
 /* login + forget password form */
 .container.login_form .row,
 .container.newuser_form .row,
